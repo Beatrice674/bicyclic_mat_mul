@@ -51,7 +51,7 @@ Examples:
  0. Exit
 ```
 
-In this case, `case 1-7` refer to the basic test cases, while `case 8-14` include all the scenarios from Table 8 to Table 14. Here, $(n,m,p)$ represents matrices $A\in \mathcal{R}^{n \times m} $and $B\in \mathcal{R}^{m \times p}$. The specific test scenarios are as follows:
+In this case, `case 1-7` refer to the basic test cases, while `case 8-14` include all the scenarios from Table 8 to Table 14. Here, $(n,m,p)$ represents matrices $A\in \mathcal{R}^{n \times m}$ and $B\in \mathcal{R}^{m \times p}$. The specific test scenarios are as follows:
 
 1. `case 1`:
 
@@ -109,32 +109,19 @@ In this case, `case 1-7` refer to the basic test cases, while `case 8-14` includ
    - `Faster Bicyclic encode matrix multiplication`: $(15, 16, 17)$
    
 10. `case 10`:
-
    - `Jiang matrix multiplication`: $(64,64,64)$
-
    - `Jiang matrix multiplication`: $(128,128,128) | N=32768$
-
-     
-
    - `Bicyclic encode matrix multiplication`: $(44, 45, 43)$
-
    - `Bicyclic encode matrix multiplication`: $(61, 64, 63) | N=16384$
-
    - `Bicyclic encode matrix multiplication`: $(89, 91, 90) | N=32768$
-
-     
-
    - `Faster Bicyclic encode matrix multiplication`: $(15, 16, 17)$
-
    - `Faster Bicyclic encode matrix multiplication`: $(21, 16, 23)$
-
    - `Faster Bicyclic encode matrix multiplication`: $(31, 16, 33)$
 
 11. `case 11`:
-
     * `Jiang naive block matrix multiplication`: $(64,64,64) \times 2$
 
-    * `Jiang naive block matrix multiplication`: $(128,128,128) \times 1 | N=32768$
+    * `Jiang naive block matrix multiplication`: $(128,128,128) \times 1 |N=32768$
 
     * `Jiang strassen block matrix multiplication`: $(64,64,64) \times 2$
 
