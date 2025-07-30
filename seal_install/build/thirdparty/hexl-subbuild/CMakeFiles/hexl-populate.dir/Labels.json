@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/delld/xyy/seall/build/thirdparty/hexl-subbuild/CMakeFiles/hexl-populate"
+		},
+		{
+			"file" : "/home/delld/xyy/seall/build/thirdparty/hexl-subbuild/CMakeFiles/hexl-populate.rule"
+		},
+		{
+			"file" : "/home/delld/xyy/seall/build/thirdparty/hexl-subbuild/CMakeFiles/hexl-populate-complete.rule"
+		},
+		{
+			"file" : "/home/delld/xyy/seall/build/thirdparty/hexl-subbuild/hexl/src/hexl-populate-stamp/hexl-populate-build.rule"
+		},
+		{
+			"file" : "/home/delld/xyy/seall/build/thirdparty/hexl-subbuild/hexl/src/hexl-populate-stamp/hexl-populate-configure.rule"
+		},
+		{
+			"file" : "/home/delld/xyy/seall/build/thirdparty/hexl-subbuild/hexl/src/hexl-populate-stamp/hexl-populate-download.rule"
+		},
+		{
+			"file" : "/home/delld/xyy/seall/build/thirdparty/hexl-subbuild/hexl/src/hexl-populate-stamp/hexl-populate-install.rule"
+		},
+		{
+			"file" : "/home/delld/xyy/seall/build/thirdparty/hexl-subbuild/hexl/src/hexl-populate-stamp/hexl-populate-mkdir.rule"
+		},
+		{
+			"file" : "/home/delld/xyy/seall/build/thirdparty/hexl-subbuild/hexl/src/hexl-populate-stamp/hexl-populate-patch.rule"
+		},
+		{
+			"file" : "/home/delld/xyy/seall/build/thirdparty/hexl-subbuild/hexl/src/hexl-populate-stamp/hexl-populate-test.rule"
+		},
+		{
+			"file" : "/home/delld/xyy/seall/build/thirdparty/hexl-subbuild/hexl/src/hexl-populate-stamp/hexl-populate-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"hexl-populate"
+		],
+		"name" : "hexl-populate"
+	}
+}

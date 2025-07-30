@@ -1,0 +1,1 @@
+/usr/bin/c++ -Wall -g -static CMakeFiles/test_enc_mat_mul.dir/test_enc_mat_mul.cpp.o CMakeFiles/test_enc_mat_mul.dir/home/delld/xyy/bicyclic_mat_mul/src/utils.cpp.o CMakeFiles/test_enc_mat_mul.dir/home/delld/xyy/bicyclic_mat_mul/src/matrix.cpp.o -o test_enc_mat_mul  /usr/local/lib/libseal-4.1.a 

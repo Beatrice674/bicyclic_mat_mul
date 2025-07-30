@@ -101,8 +101,8 @@ inline void cipher_matrix_jiang::change_cipher_to_matrix_A(double scale, seal::C
     // cout<<"start change cipher to matrix A"<<endl;
     Matrix<double> u_sigma;
     u_sigma.generate_u_sigma(d, d);
-    Ciphertext cipher_tmp;//save intermediate variables.
-    vector<Ciphertext> cipher_rotate,cipher_result;//save rotate result vector
+    Ciphertext cipher_tmp; //save intermediate variables.
+    vector<Ciphertext> cipher_rotate,cipher_result; //save rotate result vector
     Plaintext plain_tmp;
     vector<double> vec_tmp;
     Ciphertext destination;

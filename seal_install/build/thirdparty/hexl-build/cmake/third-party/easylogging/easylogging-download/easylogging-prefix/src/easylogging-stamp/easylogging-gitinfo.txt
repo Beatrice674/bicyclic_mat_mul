@@ -1,0 +1,3 @@
+repository='https://github.com/amrayn/easyloggingpp.git'
+module=''
+tag='origin'

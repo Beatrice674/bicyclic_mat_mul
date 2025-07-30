@@ -226,7 +226,7 @@ public:
         if (std::gcd(n, d) == 1){
             
             for (std::size_t i = 0; i < n*d; i++){
-                v.push_back(M[i % d][i%n]);
+                v.push_back(M[i % d][i % n]);
             }
             
         }

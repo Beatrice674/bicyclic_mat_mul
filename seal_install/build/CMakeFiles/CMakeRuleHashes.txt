@@ -1,0 +1,4 @@
+# Hashes of file build rules.
+7fc24a923a206dc4c3cfed77306c9d30 thirdparty/hexl-build/CMakeFiles/check
+f72a8471716f5173b61b679c89f47124 thirdparty/zstd-build/CMakeFiles/clean-all
+9b27dda949607089a4f3977d6f6f939a thirdparty/zstd-build/lib/CMakeFiles/uninstall

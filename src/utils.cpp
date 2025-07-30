@@ -45,6 +45,16 @@ uint64_t smallest_r(uint64_t n, uint64_t m, uint64_t p){
     return r;
 }
 
+std::vector<int> get_steps(uint64_t n, uint64_t m, uint64_t p)
+{
+    std::vector<int> steps;
+    for (uint64_t i = 1; i < uint64_t(sqrt(m)) + 1; i++)
+    {
+        steps.push_back(mod(i * n, n*m));
+        steps.push_back(mod(i * p,  (m*p)));
+    }
+    return steps;
+}
 
 
 

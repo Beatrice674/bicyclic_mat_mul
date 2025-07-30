@@ -1,0 +1,27 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+      {
+        "name": "Debug SEAL Evaluator",
+        "type": "cppdbg",
+        "request": "launch",
+        "program": "${workspaceFolder}/build/bin/sealexamples",
+        "args": [],
+        "stopAtEntry": false,
+        "cwd": "${workspaceFolder}/native/examples",
+        "environment": [],
+        "externalConsole": false ,
+        "MIMode": "gdb", // or "gdb" on Linux
+        "miDebuggerPath": "/usr/bin/gdb",
+        "setupCommands": [
+          {
+            "description": "Enable pretty-printing for gdb/lldb",
+            "text": "-enable-pretty-printing",
+            "ignoreFailures": true
+          }
+        ],
+        "preLaunchTask": "build"
+      }
+    ]
+  }
+  

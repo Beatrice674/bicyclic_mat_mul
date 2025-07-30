@@ -1,8 +1,10 @@
 #include <iostream>
+#include <omp.h>
 #include <seal/seal.h>
 #include "matrix.h"
 #include "utils.h"
 #include "coprime_enc_cipher.h"
+
 
 using namespace std;
 using namespace seal;
@@ -327,7 +329,8 @@ matrix_block Strassen_block_jiang(matrix_block encrypted_A,matrix_block encrypte
     // cout<<encrypted_A.get_cols()<<"  "<<encrypted_A.get_rows()<<endl;
     matrix_block A11,A12,A21,A22;
     matrix_block B11,B12,B21,B22;
-    matrix_block M1,M2,M3,M4,M5,M6,M7;
+    vector<matrix_block> M(7);
+    // matrix_block M1,M2,M3,M4,M5,M6,M7;
     matrix_block C11,C12,C21,C22;
 
     A11=encrypted_A.extract_matrix(0,block_rows_A/2,0,block_cols_A/2);
@@ -342,28 +345,89 @@ matrix_block Strassen_block_jiang(matrix_block encrypted_A,matrix_block encrypte
 
     // stop
     if(block_rows_A/2<=1 && block_cols_A/2<=1){
-        M1=matrix_block_jiang_mul(ADD(A11,A22,evaluator),ADD(B11,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
-        M2=matrix_block_jiang_mul(ADD(A21,A22,evaluator),B11,scale,encoder,evaluator,galois_keys,relin_keys);
-        M3=matrix_block_jiang_mul(A11,SUB(B12,B22,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys);
-        M4=matrix_block_jiang_mul(A22,SUB(B21,B11,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys);
-        M5=matrix_block_jiang_mul(ADD(A11,A12,evaluator),B22,scale,encoder,evaluator,galois_keys,relin_keys);
-        M6=matrix_block_jiang_mul(SUB(A21,A11,evaluator,encoder),ADD(B11,B12,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
-        M7=matrix_block_jiang_mul(SUB(A12,A22,evaluator,encoder),ADD(B21,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
+        #pragma omp parallel for num_threads(8)
+
+        for (int k = 0; k < 7; k++) {
+            switch (k) {
+                case 0:
+                    M[0] = matrix_block_jiang_mul(ADD(A11,A22,evaluator), ADD(B11,B22,evaluator),scale, encoder, evaluator, galois_keys, relin_keys);
+                    break;
+                case 1:
+                    M[1] = matrix_block_jiang_mul(ADD(A21,A22,evaluator), B11, scale, encoder, evaluator, galois_keys, relin_keys);
+                    break;
+                case 2:
+                    M[2] = matrix_block_jiang_mul(A11, SUB(B12,B22,evaluator,encoder), scale, encoder, evaluator, galois_keys, relin_keys);
+                    break;
+                case 3:
+                    M[3] = matrix_block_jiang_mul(A22, SUB(B21,B11,evaluator,encoder), scale, encoder, evaluator, galois_keys, relin_keys);
+                    break;
+                case 4:
+                    M[4] = matrix_block_jiang_mul(ADD(A11,A12,evaluator), B22, scale, encoder, evaluator, galois_keys, relin_keys);
+                    break;
+                case 5:
+                    M[5] = matrix_block_jiang_mul(SUB(A21,A11,evaluator,encoder), ADD(B11,B12,evaluator), scale, encoder, evaluator, galois_keys, relin_keys);
+                    break;
+                case 6:
+                    M[6] = matrix_block_jiang_mul(SUB(A12,A22,evaluator,encoder), ADD(B21,B22,evaluator), scale, encoder, evaluator, galois_keys, relin_keys);
+                    break;
+            }
+        }
+
+        // M1=matrix_block_jiang_mul(ADD(A11,A22,evaluator),ADD(B11,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
+        // M2=matrix_block_jiang_mul(ADD(A21,A22,evaluator),B11,scale,encoder,evaluator,galois_keys,relin_keys);
+        // M3=matrix_block_jiang_mul(A11,SUB(B12,B22,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys);
+        // M4=matrix_block_jiang_mul(A22,SUB(B21,B11,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys);
+        // M5=matrix_block_jiang_mul(ADD(A11,A12,evaluator),B22,scale,encoder,evaluator,galois_keys,relin_keys);
+        // M6=matrix_block_jiang_mul(SUB(A21,A11,evaluator,encoder),ADD(B11,B12,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
+        // M7=matrix_block_jiang_mul(SUB(A12,A22,evaluator,encoder),ADD(B21,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
     }
     else{
-        M1=Strassen_block_jiang(ADD(A11,A22,evaluator),ADD(B11,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
-        M2=Strassen_block_jiang(ADD(A21,A22,evaluator),B11,scale,encoder,evaluator,galois_keys,relin_keys);
-        M3=Strassen_block_jiang(A11,SUB(B12,B22,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys);
-        M4=Strassen_block_jiang(A22,SUB(B21,B11,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys);
-        M5=Strassen_block_jiang(ADD(A11,A12,evaluator),B22,scale,encoder,evaluator,galois_keys,relin_keys);
-        M6=Strassen_block_jiang(SUB(A21,A11,evaluator,encoder),ADD(B11,B12,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
-        M7=Strassen_block_jiang(SUB(A12,A22,evaluator,encoder),ADD(B21,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
+
+        #pragma omp parallel for num_threads(8)
+
+        for (int k = 0; k < 7; k++) {
+            switch (k) {
+                case 0:
+                    M[0] = Strassen_block_jiang(ADD(A11,A22,evaluator), ADD(B11,B22,evaluator),scale, encoder, evaluator, galois_keys, relin_keys);
+                    break;
+                case 1:
+                    M[1] = Strassen_block_jiang(ADD(A21,A22,evaluator), B11, scale, encoder, evaluator, galois_keys, relin_keys);
+                    break;
+                case 2:
+                    M[2] = Strassen_block_jiang(A11, SUB(B12,B22,evaluator,encoder), scale, encoder, evaluator, galois_keys, relin_keys);
+                    break;
+                case 3:
+                    M[3] = Strassen_block_jiang(A22, SUB(B21,B11,evaluator,encoder), scale, encoder, evaluator, galois_keys, relin_keys);
+                    break;
+                case 4:
+                    M[4] = Strassen_block_jiang(ADD(A11,A12,evaluator), B22, scale, encoder, evaluator, galois_keys, relin_keys);
+                    break;
+                case 5:
+                    M[5] = Strassen_block_jiang(SUB(A21,A11,evaluator,encoder), ADD(B11,B12,evaluator), scale, encoder, evaluator, galois_keys, relin_keys);
+                    break;
+                case 6:
+                    M[6] = Strassen_block_jiang(SUB(A12,A22,evaluator,encoder), ADD(B21,B22,evaluator), scale, encoder, evaluator, galois_keys, relin_keys);
+                    break;
+            }
+        }
+        // M1=Strassen_block_jiang(ADD(A11,A22,evaluator),ADD(B11,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
+        // M2=Strassen_block_jiang(ADD(A21,A22,evaluator),B11,scale,encoder,evaluator,galois_keys,relin_keys);
+        // M3=Strassen_block_jiang(A11,SUB(B12,B22,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys);
+        // M4=Strassen_block_jiang(A22,SUB(B21,B11,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys);
+        // M5=Strassen_block_jiang(ADD(A11,A12,evaluator),B22,scale,encoder,evaluator,galois_keys,relin_keys);
+        // M6=Strassen_block_jiang(SUB(A21,A11,evaluator,encoder),ADD(B11,B12,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
+        // M7=Strassen_block_jiang(SUB(A12,A22,evaluator,encoder),ADD(B21,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
     }
 
-    C11=ADD(ADD(M1,M4,evaluator),SUB(M7,M5,evaluator,encoder),evaluator);
-    C12=ADD(M3,M5,evaluator);
-    C21=ADD(M2,M4,evaluator);
-    C22=ADD(SUB(M1,M2,evaluator,encoder),ADD(M3,M6,evaluator),evaluator);
+    // C11=ADD(ADD(M1,M4,evaluator),SUB(M7,M5,evaluator,encoder),evaluator);
+    // C12=ADD(M3,M5,evaluator);
+    // C21=ADD(M2,M4,evaluator);
+    // C22=ADD(SUB(M1,M2,evaluator,encoder),ADD(M3,M6,evaluator),evaluator);
+
+    C11=ADD(ADD(M[0],M[3],evaluator),SUB(M[6],M[4],evaluator,encoder),evaluator);
+    C12=ADD(M[2],M[4],evaluator);
+    C21=ADD(M[1],M[3],evaluator);
+    C22=ADD(SUB(M[0],M[1],evaluator,encoder),ADD(M[2],M[5],evaluator),evaluator);
 
     return  Merage_matrix(C11,C12,C21,C22);
 }
@@ -408,7 +472,7 @@ matrix_block Naive_block_jiang(matrix_block encrypted_A,matrix_block encrypted_B
 
 //Strassen block coprime multiply
 matrix_block matrix_block_coprime_mul(size_t s_n,size_t s_m,size_t s_p,matrix_block encrypted_A,matrix_block encrypted_B,double scale, seal::CKKSEncoder& encoder,
-                                      seal::Evaluator &evaluator,seal::GaloisKeys &galois_keys, seal::RelinKeys& relin_keys)
+                                      seal::Evaluator &evaluator,seal::GaloisKeys &galois_keys, seal::RelinKeys& relin_keys, int method_choice)
 {
     seal::Ciphertext cipher_A,cipher_B;
     cipher_A=encrypted_A.get_cipher_matrix()[0][0];
@@ -418,7 +482,7 @@ matrix_block matrix_block_coprime_mul(size_t s_n,size_t s_m,size_t s_p,matrix_bl
     cipher_matrix_coprime matrix_B(cipher_B,s_m,s_p);
     cipher_matrix_coprime matrix_C;
 
-    encrypted_coprime_matrix_multiplication(encoder,scale,evaluator,relin_keys,galois_keys,matrix_A,matrix_B,matrix_C);
+    encrypted_coprime_matrix_multiplication(encoder,scale,evaluator,relin_keys,galois_keys,matrix_A,matrix_B,matrix_C, method_choice);
 
     vector<vector<seal::Ciphertext>> cipher_matrix(1,vector<seal::Ciphertext>(1));
     cipher_matrix[0][0]=matrix_C.get_cipher_matrix();
@@ -446,7 +510,7 @@ matrix_block matrix_block_coprime_mul_imporve_log(size_t s_n,size_t s_m,size_t s
 
 // Strassen block by coprime
 matrix_block Strassen_block_coprime(size_t s_n,size_t s_m,size_t s_p,matrix_block encrypted_A,matrix_block encrypted_B,double scale, seal::CKKSEncoder& encoder,
-                                    seal::Evaluator &evaluator,seal::GaloisKeys &galois_keys, seal::RelinKeys& relin_keys)
+                                    seal::Evaluator &evaluator,seal::GaloisKeys &galois_keys, seal::RelinKeys& relin_keys, int method_choice)
 {
     size_t block_rows_A=encrypted_A.get_block_rows();
     size_t block_cols_A=encrypted_A.get_block_cols();
@@ -455,6 +519,7 @@ matrix_block Strassen_block_coprime(size_t s_n,size_t s_m,size_t s_p,matrix_bloc
 
     matrix_block A11,A12,A21,A22;
     matrix_block B11,B12,B21,B22;
+    // std::vector<matrix_block> M(7);
     matrix_block M1,M2,M3,M4,M5,M6,M7;
     matrix_block C11,C12,C21,C22;
 
@@ -470,23 +535,82 @@ matrix_block Strassen_block_coprime(size_t s_n,size_t s_m,size_t s_p,matrix_bloc
 
     // stop
     if(block_rows_A/2<=1 && block_cols_A/2<=1){
-        M1=matrix_block_coprime_mul(s_n,s_m,s_p,ADD(A11,A22,evaluator),ADD(B11,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
-        M2=matrix_block_coprime_mul(s_n,s_m,s_p,ADD(A21,A22,evaluator),B11,scale,encoder,evaluator,galois_keys,relin_keys);
-        M3=matrix_block_coprime_mul(s_n,s_m,s_p,A11,SUB(B12,B22,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys);
-        M4=matrix_block_coprime_mul(s_n,s_m,s_p,A22,SUB(B21,B11,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys);
-        M5=matrix_block_coprime_mul(s_n,s_m,s_p,ADD(A11,A12,evaluator),B22,scale,encoder,evaluator,galois_keys,relin_keys);
-        M6=matrix_block_coprime_mul(s_n,s_m,s_p,SUB(A21,A11,evaluator,encoder),ADD(B11,B12,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
-        M7=matrix_block_coprime_mul(s_n,s_m,s_p,SUB(A12,A22,evaluator,encoder),ADD(B21,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
+
+        // #pragma omp parallel for num_threads(8)
+        // for (int k = 0; k < 7; k++) {
+        //     switch (k) {
+        //         case 0:
+        //             M[0] = matrix_block_coprime_mul(s_n,s_m,s_p,ADD(A11,A22,evaluator),ADD(B11,B22,evaluator),scale, encoder, evaluator, galois_keys, relin_keys);
+        //             break;
+        //         case 1:
+        //             M[1] = matrix_block_coprime_mul(s_n,s_m,s_p,ADD(A21,A22,evaluator),B11,scale, encoder, evaluator, galois_keys, relin_keys);
+        //             break;
+        //         case 2:
+        //             M[2] = matrix_block_coprime_mul(s_n,s_m,s_p,A11,SUB(B12,B22,evaluator,encoder),scale, encoder, evaluator, galois_keys, relin_keys);
+        //             break;
+        //         case 3:
+        //             M[3] = matrix_block_coprime_mul(s_n,s_m,s_p,A22,SUB(B21,B11,evaluator,encoder),scale, encoder, evaluator, galois_keys, relin_keys);
+        //             break;
+        //         case 4:
+        //             M[4] = matrix_block_coprime_mul(s_n,s_m,s_p,ADD(A11,A12,evaluator),B22,scale, encoder, evaluator, galois_keys, relin_keys);
+        //             break;
+        //         case 5:
+        //             M[5] = matrix_block_coprime_mul(s_n,s_m,s_p,SUB(A21,A11,evaluator,encoder),ADD(B11,B12,evaluator),scale, encoder, evaluator, galois_keys, relin_keys);
+        //             break;
+        //         case 6:
+        //             M[6] = matrix_block_coprime_mul(s_n,s_m,s_p,SUB(A12,A22,evaluator,encoder),ADD(B21,B22,evaluator),scale, encoder, evaluator, galois_keys, relin_keys);
+        //             break;
+        //     }
+        // }
+
+        M1=matrix_block_coprime_mul(s_n,s_m,s_p,ADD(A11,A22,evaluator),ADD(B11,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys,method_choice);
+        M2=matrix_block_coprime_mul(s_n,s_m,s_p,ADD(A21,A22,evaluator),B11,scale,encoder,evaluator,galois_keys,relin_keys,method_choice);
+        M3=matrix_block_coprime_mul(s_n,s_m,s_p,A11,SUB(B12,B22,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys,method_choice);
+        M4=matrix_block_coprime_mul(s_n,s_m,s_p,A22,SUB(B21,B11,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys,method_choice);
+        M5=matrix_block_coprime_mul(s_n,s_m,s_p,ADD(A11,A12,evaluator),B22,scale,encoder,evaluator,galois_keys,relin_keys,method_choice);
+        M6=matrix_block_coprime_mul(s_n,s_m,s_p,SUB(A21,A11,evaluator,encoder),ADD(B11,B12,evaluator),scale,encoder,evaluator,galois_keys,relin_keys,method_choice);
+        M7=matrix_block_coprime_mul(s_n,s_m,s_p,SUB(A12,A22,evaluator,encoder),ADD(B21,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys,method_choice);
     }
     else{
-        M1=Strassen_block_coprime(s_n,s_m,s_p,ADD(A11,A22,evaluator),ADD(B11,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
-        M2=Strassen_block_coprime(s_n,s_m,s_p,ADD(A21,A22,evaluator),B11,scale,encoder,evaluator,galois_keys,relin_keys);
-        M3=Strassen_block_coprime(s_n,s_m,s_p,A11,SUB(B12,B22,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys);
-        M4=Strassen_block_coprime(s_n,s_m,s_p,A22,SUB(B21,B11,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys);
-        M5=Strassen_block_coprime(s_n,s_m,s_p,ADD(A11,A12,evaluator),B22,scale,encoder,evaluator,galois_keys,relin_keys);
-        M6=Strassen_block_coprime(s_n,s_m,s_p,SUB(A21,A11,evaluator,encoder),ADD(B11,B12,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
-        M7=Strassen_block_coprime(s_n,s_m,s_p,SUB(A12,A22,evaluator,encoder),ADD(B21,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
+        // #pragma omp parallel for num_threads(8)
+        // for (int k = 0; k < 7; k++) {
+        //     switch (k) {
+        //         case 0:
+        //             M[0] = Strassen_block_coprime(s_n,s_m,s_p,ADD(A11,A22,evaluator),ADD(B11,B22,evaluator),scale, encoder, evaluator, galois_keys, relin_keys);
+        //             break;
+        //         case 1:
+        //             M[1] = Strassen_block_coprime(s_n,s_m,s_p,ADD(A21,A22,evaluator),B11,scale, encoder, evaluator, galois_keys, relin_keys);
+        //             break;
+        //         case 2:
+        //             M[2] = Strassen_block_coprime(s_n,s_m,s_p,A11,SUB(B12,B22,evaluator,encoder),scale, encoder, evaluator, galois_keys, relin_keys);
+        //             break;
+        //         case 3:
+        //             M[3] = Strassen_block_coprime(s_n,s_m,s_p,A22,SUB(B21,B11,evaluator,encoder),scale, encoder, evaluator, galois_keys, relin_keys);
+        //             break;
+        //         case 4:
+        //             M[4] = Strassen_block_coprime(s_n,s_m,s_p,ADD(A11,A12,evaluator),B22,scale, encoder, evaluator, galois_keys, relin_keys);
+        //             break;
+        //         case 5:
+        //             M[5] = Strassen_block_coprime(s_n,s_m,s_p,SUB(A21,A11,evaluator,encoder),ADD(B11,B12,evaluator),scale, encoder, evaluator, galois_keys, relin_keys);
+        //             break;
+        //         case 6:
+        //             M[6] = Strassen_block_coprime(s_n,s_m,s_p,SUB(A12,A22,evaluator,encoder),ADD(B21,B22,evaluator),scale, encoder, evaluator, galois_keys, relin_keys);
+        //             break;
+        //     }
+        // }
+        M1=Strassen_block_coprime(s_n,s_m,s_p,ADD(A11,A22,evaluator),ADD(B11,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys,method_choice);
+        M2=Strassen_block_coprime(s_n,s_m,s_p,ADD(A21,A22,evaluator),B11,scale,encoder,evaluator,galois_keys,relin_keys,method_choice);
+        M3=Strassen_block_coprime(s_n,s_m,s_p,A11,SUB(B12,B22,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys,method_choice);
+        M4=Strassen_block_coprime(s_n,s_m,s_p,A22,SUB(B21,B11,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys,method_choice);
+        M5=Strassen_block_coprime(s_n,s_m,s_p,ADD(A11,A12,evaluator),B22,scale,encoder,evaluator,galois_keys,relin_keys,method_choice);
+        M6=Strassen_block_coprime(s_n,s_m,s_p,SUB(A21,A11,evaluator,encoder),ADD(B11,B12,evaluator),scale,encoder,evaluator,galois_keys,relin_keys,method_choice);
+        M7=Strassen_block_coprime(s_n,s_m,s_p,SUB(A12,A22,evaluator,encoder),ADD(B21,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys,method_choice);
     }
+
+    // C11=ADD(ADD(M[0],M[3],evaluator),SUB(M[6],M[4],evaluator,encoder),evaluator);
+    // C12=ADD(M[2],M[4],evaluator);
+    // C21=ADD(M[1],M[3],evaluator);
+    // C22=ADD(SUB(M[0],M[1],evaluator,encoder),ADD(M[2],M[5],evaluator),evaluator);
 
     C11=ADD(ADD(M1,M4,evaluator),SUB(M7,M5,evaluator,encoder),evaluator);
     C12=ADD(M3,M5,evaluator);
@@ -531,13 +655,13 @@ matrix_block Strassen_block_coprime_imporve_log(size_t s_n,size_t s_m,size_t s_p
         M7=matrix_block_coprime_mul_imporve_log(s_n,s_m,s_p,SUB(A12,A22,evaluator,encoder),ADD(B21,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
     }
     else{
-        M1=Strassen_block_coprime(s_n,s_m,s_p,ADD(A11,A22,evaluator),ADD(B11,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
-        M2=Strassen_block_coprime(s_n,s_m,s_p,ADD(A21,A22,evaluator),B11,scale,encoder,evaluator,galois_keys,relin_keys);
-        M3=Strassen_block_coprime(s_n,s_m,s_p,A11,SUB(B12,B22,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys);
-        M4=Strassen_block_coprime(s_n,s_m,s_p,A22,SUB(B21,B11,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys);
-        M5=Strassen_block_coprime(s_n,s_m,s_p,ADD(A11,A12,evaluator),B22,scale,encoder,evaluator,galois_keys,relin_keys);
-        M6=Strassen_block_coprime(s_n,s_m,s_p,SUB(A21,A11,evaluator,encoder),ADD(B11,B12,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
-        M7=Strassen_block_coprime(s_n,s_m,s_p,SUB(A12,A22,evaluator,encoder),ADD(B21,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys);
+        M1=Strassen_block_coprime(s_n,s_m,s_p,ADD(A11,A22,evaluator),ADD(B11,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys,2);
+        M2=Strassen_block_coprime(s_n,s_m,s_p,ADD(A21,A22,evaluator),B11,scale,encoder,evaluator,galois_keys,relin_keys,2);
+        M3=Strassen_block_coprime(s_n,s_m,s_p,A11,SUB(B12,B22,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys,2);
+        M4=Strassen_block_coprime(s_n,s_m,s_p,A22,SUB(B21,B11,evaluator,encoder),scale,encoder,evaluator,galois_keys,relin_keys,2);
+        M5=Strassen_block_coprime(s_n,s_m,s_p,ADD(A11,A12,evaluator),B22,scale,encoder,evaluator,galois_keys,relin_keys,2);
+        M6=Strassen_block_coprime(s_n,s_m,s_p,SUB(A21,A11,evaluator,encoder),ADD(B11,B12,evaluator),scale,encoder,evaluator,galois_keys,relin_keys,2);
+        M7=Strassen_block_coprime(s_n,s_m,s_p,SUB(A12,A22,evaluator,encoder),ADD(B21,B22,evaluator),scale,encoder,evaluator,galois_keys,relin_keys,2);
     }
 
     C11=ADD(ADD(M1,M4,evaluator),SUB(M7,M5,evaluator,encoder),evaluator);
@@ -552,7 +676,7 @@ matrix_block Strassen_block_coprime_imporve_log(size_t s_n,size_t s_m,size_t s_p
 
 // Naive block
 matrix_block Naive_block_coprime(size_t s_n,size_t s_m,size_t s_p, matrix_block encrypted_A,matrix_block encrypted_B,double scale, seal::CKKSEncoder& encoder,
-                                 seal::Evaluator &evaluator,seal::GaloisKeys &galois_keys, seal::RelinKeys& relin_keys)
+                                 seal::Evaluator &evaluator,seal::GaloisKeys &galois_keys, seal::RelinKeys& relin_keys, int method_choice)
 {
     size_t block_rows_A=encrypted_A.get_block_rows();
     size_t block_cols_A=encrypted_A.get_block_cols();
@@ -575,7 +699,7 @@ matrix_block Naive_block_coprime(size_t s_n,size_t s_m,size_t s_p, matrix_block 
                 cipher_matrix_coprime matrix_B(encrypted_B.get_cipher_matrix()[k][j],s_m,s_p);
                 cipher_matrix_coprime matrix_C;
 
-                encrypted_coprime_matrix_multiplication(encoder,scale,evaluator,relin_keys,galois_keys,matrix_A,matrix_B,matrix_C);
+                encrypted_coprime_matrix_multiplication(encoder,scale,evaluator,relin_keys,galois_keys,matrix_A,matrix_B,matrix_C, method_choice);
                 cipher_vector.push_back(matrix_C.get_cipher_matrix());
             }
             evaluator.add_many(cipher_vector,cipher_tmp);

@@ -1,0 +1,2323 @@
+The system is: Linux - 6.8.0-58-generic - x86_64
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/home/delld/xyy/seall/build/CMakeFiles/3.22.1/CompilerIdCXX/a.out"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/home/delld/xyy/seall/build/CMakeFiles/3.22.1/CompilerIdC/a.out"
+
+Detecting CXX compiler ABI info compiled with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0c132/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0c132.dir/build.make CMakeFiles/cmTC_0c132.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++   -v -o CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0c132.dir/'
+ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_0c132.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccvBhpPq.s
+GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/include/c++/11
+ /usr/include/x86_64-linux-gnu/c++/11
+ /usr/include/c++/11/backward
+ /usr/lib/gcc/x86_64-linux-gnu/11/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0c132.dir/'
+ as -v --64 -o CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccvBhpPq.s
+GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.'
+Linking CXX executable cmTC_0c132
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c132.dir/link.txt --verbose=1
+/usr/bin/c++  -v CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0c132 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/c++
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0c132' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0c132.'
+ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpQMAgA.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_0c132 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0c132' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0c132.'
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed CXX implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/include/c++/11]
+    add: [/usr/include/x86_64-linux-gnu/c++/11]
+    add: [/usr/include/c++/11/backward]
+    add: [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/include/c++/11] ==> [/usr/include/c++/11]
+  collapse include dir [/usr/include/x86_64-linux-gnu/c++/11] ==> [/usr/include/x86_64-linux-gnu/c++/11]
+  collapse include dir [/usr/include/c++/11/backward] ==> [/usr/include/c++/11/backward]
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/11/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/include/c++/11;/usr/include/x86_64-linux-gnu/c++/11;/usr/include/c++/11/backward;/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed CXX implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_0c132/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_0c132.dir/build.make CMakeFiles/cmTC_0c132.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building CXX object CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0c132.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /usr/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpdir CMakeFiles/cmTC_0c132.dir/ -dumpbase CMakeCXXCompilerABI.cpp.cpp -dumpbase-ext .cpp -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccvBhpPq.s]
+  ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/11"]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/include/c++/11]
+  ignore line: [ /usr/include/x86_64-linux-gnu/c++/11]
+  ignore line: [ /usr/include/c++/11/backward]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C++17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: d591828bb4d392ae8b7b160e5bb0b95f]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0c132.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccvBhpPq.s]
+  ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.']
+  ignore line: [Linking CXX executable cmTC_0c132]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0c132.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0c132 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/c++]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0c132' '-shared-libgcc' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_0c132.']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccpQMAgA.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_0c132 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccpQMAgA.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_0c132] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+    arg [CMakeFiles/cmTC_0c132.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-lstdc++] ==> lib [stdc++]
+    arg [-lm] ==> lib [m]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [-lc] ==> lib [c]
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [-lgcc] ==> lib [gcc]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
+  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Detecting C compiler ABI info compiled with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_95572/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_95572.dir/build.make CMakeFiles/cmTC_95572.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc   -v -o CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_95572.dir/'
+ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_95572.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccJYy0TB.s
+GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"
+ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/gcc/x86_64-linux-gnu/11/include
+ /usr/local/include
+ /usr/include/x86_64-linux-gnu
+ /usr/include
+End of search list.
+GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)
+	compiled by GNU C version 11.4.0, GMP version 6.2.1, MPFR version 4.1.0, MPC version 1.2.1, isl version isl-0.24-GMP
+
+GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
+Compiler executable checksum: 50eaa2331df977b8016186198deb2d18
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_95572.dir/'
+ as -v --64 -o CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.o /tmp/ccJYy0TB.s
+GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.'
+Linking C executable cmTC_95572
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95572.dir/link.txt --verbose=1
+/usr/bin/cc  -v CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.o -o cmTC_95572 
+Using built-in specs.
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper
+OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa
+OFFLOAD_TARGET_DEFAULT=1
+Target: x86_64-linux-gnu
+Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++,m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr,amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2
+Thread model: posix
+Supported LTO compression algorithms: zlib zstd
+gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) 
+COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/
+LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_95572' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_95572.'
+ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVdQzcw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_95572 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_95572' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_95572.'
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+
+Parsed C implicit include dir info from above output: rv=done
+  found start of include info
+  found start of implicit include info
+    add: [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+    add: [/usr/local/include]
+    add: [/usr/include/x86_64-linux-gnu]
+    add: [/usr/include]
+  end of search list found
+  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/11/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/11/include]
+  collapse include dir [/usr/local/include] ==> [/usr/local/include]
+  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
+  collapse include dir [/usr/include] ==> [/usr/include]
+  implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/11/include;/usr/local/include;/usr/include/x86_64-linux-gnu;/usr/include]
+
+
+Parsed C implicit link information from above output:
+  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp]
+  ignore line: []
+  ignore line: [Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_95572/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_95572.dir/build.make CMakeFiles/cmTC_95572.dir/build]
+  ignore line: [gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp']
+  ignore line: [Building C object CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.o -c /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_95572.dir/']
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/cc1 -quiet -v -imultiarch x86_64-linux-gnu /usr/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpdir CMakeFiles/cmTC_95572.dir/ -dumpbase CMakeCCompilerABI.c.c -dumpbase-ext .c -mtune=generic -march=x86-64 -version -fasynchronous-unwind-tables -fstack-protector-strong -Wformat -Wformat-security -fstack-clash-protection -fcf-protection -o /tmp/ccJYy0TB.s]
+  ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/include-fixed"]
+  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/11/../../../../x86_64-linux-gnu/include"]
+  ignore line: [#include "..." search starts here:]
+  ignore line: [#include <...> search starts here:]
+  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/11/include]
+  ignore line: [ /usr/local/include]
+  ignore line: [ /usr/include/x86_64-linux-gnu]
+  ignore line: [ /usr/include]
+  ignore line: [End of search list.]
+  ignore line: [GNU C17 (Ubuntu 11.4.0-1ubuntu1~22.04) version 11.4.0 (x86_64-linux-gnu)]
+  ignore line: [	compiled by GNU C version 11.4.0  GMP version 6.2.1  MPFR version 4.1.0  MPC version 1.2.1  isl version isl-0.24-GMP]
+  ignore line: []
+  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
+  ignore line: [Compiler executable checksum: 50eaa2331df977b8016186198deb2d18]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_95572.dir/']
+  ignore line: [ as -v --64 -o CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.o /tmp/ccJYy0TB.s]
+  ignore line: [GNU assembler version 2.38 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.38]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64' '-dumpdir' 'CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.']
+  ignore line: [Linking C executable cmTC_95572]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_95572.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.o -o cmTC_95572 ]
+  ignore line: [Using built-in specs.]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper]
+  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none:amdgcn-amdhsa]
+  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
+  ignore line: [Target: x86_64-linux-gnu]
+  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 11.4.0-1ubuntu1~22.04' --with-bugurl=file:///usr/share/doc/gcc-11/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ m2 --prefix=/usr --with-gcc-major-version-only --program-suffix=-11 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-plugin --enable-default-pie --with-system-zlib --enable-libphobos-checking=release --with-target-system-zlib=auto --enable-objc-gc=auto --enable-multiarch --disable-werror --enable-cet --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-nvptx/usr amdgcn-amdhsa=/build/gcc-11-XeT9lY/gcc-11-11.4.0/debian/tmp-gcn/usr --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu --with-build-config=bootstrap-lto-lean --enable-link-serialization=2]
+  ignore line: [Thread model: posix]
+  ignore line: [Supported LTO compression algorithms: zlib zstd]
+  ignore line: [gcc version 11.4.0 (Ubuntu 11.4.0-1ubuntu1~22.04) ]
+  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/11/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/11/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_95572' '-mtune=generic' '-march=x86-64' '-dumpdir' 'cmTC_95572.']
+  link line: [ /usr/lib/gcc/x86_64-linux-gnu/11/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper -plugin-opt=-fresolution=/tmp/ccVdQzcw.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_95572 /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/11 -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/11/../../.. CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/11/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccVdQzcw.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+    arg [-pie] ==> ignore
+    arg [-znow] ==> ignore
+    arg [-zrelro] ==> ignore
+    arg [-o] ==> ignore
+    arg [cmTC_95572] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib] ==> dir [/lib/../lib]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
+    arg [-L/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..]
+    arg [CMakeFiles/cmTC_95572.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [-lc] ==> lib [c]
+    arg [-lgcc] ==> lib [gcc]
+    arg [--push-state] ==> ignore
+    arg [--as-needed] ==> ignore
+    arg [-lgcc_s] ==> lib [gcc_s]
+    arg [--pop-state] ==> ignore
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o]
+    arg [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
+  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11] ==> [/usr/lib/gcc/x86_64-linux-gnu/11]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../../../lib] ==> [/usr/lib]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib] ==> [/lib]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
+  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/11/../../..] ==> [/usr/lib]
+  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
+  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/11/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
+  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/11;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+  implicit fwks: []
+
+
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_72901/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_72901.dir/build.make CMakeFiles/cmTC_72901.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_72901.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -fPIE   -Wall -o CMakeFiles/cmTC_72901.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_72901
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_72901.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_72901.dir/src.cxx.o -o cmTC_72901 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_27efc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_27efc.dir/build.make CMakeFiles/cmTC_27efc.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_27efc.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall  -fPIE   -Wextra -o CMakeFiles/cmTC_27efc.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_27efc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_27efc.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall  CMakeFiles/cmTC_27efc.dir/src.cxx.o -o cmTC_27efc 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_79ac8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_79ac8.dir/build.make CMakeFiles/cmTC_79ac8.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_79ac8.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra  -fPIE   -Wconversion -o CMakeFiles/cmTC_79ac8.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_79ac8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79ac8.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra  CMakeFiles/cmTC_79ac8.dir/src.cxx.o -o cmTC_79ac8 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d2399/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d2399.dir/build.make CMakeFiles/cmTC_d2399.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d2399.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra -Wconversion  -fPIE   -Wshadow -o CMakeFiles/cmTC_d2399.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d2399
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d2399.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion  CMakeFiles/cmTC_d2399.dir/src.cxx.o -o cmTC_d2399 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_96963/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_96963.dir/build.make CMakeFiles/cmTC_96963.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_96963.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra -Wconversion -Wshadow  -fPIE   -pedantic -o CMakeFiles/cmTC_96963.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_96963
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_96963.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow  CMakeFiles/cmTC_96963.dir/src.cxx.o -o cmTC_96963 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_94707/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_94707.dir/build.make CMakeFiles/cmTC_94707.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_94707.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_94707.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:31: warning: unused variable ‘fun’ [-Wunused-variable]
+    5 |                 volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+      |                               ^~~
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In instantiation of ‘main()::<lambda(auto:1)> [with auto:1 = int]’:
+/usr/include/c++/11/bits/stl_algo.h:3820:5:   required from ‘_Funct std::for_each(_IIter, _IIter, _Funct) [with _IIter = int*; _Funct = main()::<lambda(auto:1)>]’
+/usr/include/c++/11/bits/stl_algo.h:3849:17:   required from ‘_InputIterator std::for_each_n(_InputIterator, _Size, _Function) [with _InputIterator = int*; _Size = int; _Function = main()::<lambda(auto:1)>]’
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:52:   required from here
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:67: warning: unused parameter ‘b’ [-Wunused-parameter]
+    5 |                 volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+      |                                                              ~~~~~^
+Linking CXX executable cmTC_94707
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_94707.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 CMakeFiles/cmTC_94707.dir/src.cxx.o -o cmTC_94707 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Determining if the include file sys/types.h exists passed with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_52236/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_52236.dir/build.make CMakeFiles/cmTC_52236.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_52236.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_52236.dir/CheckIncludeFile.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_52236
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_52236.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_52236.dir/CheckIncludeFile.c.o -o cmTC_52236 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stdint.h exists passed with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_97366/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_97366.dir/build.make CMakeFiles/cmTC_97366.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_97366.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_97366.dir/CheckIncludeFile.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_97366
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_97366.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_97366.dir/CheckIncludeFile.c.o -o cmTC_97366 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file stddef.h exists passed with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ce970/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ce970.dir/build.make CMakeFiles/cmTC_ce970.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ce970.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_ce970.dir/CheckIncludeFile.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_ce970
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce970.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_ce970.dir/CheckIncludeFile.c.o -o cmTC_ce970 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of off64_t passed with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a7dfd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a7dfd.dir/build.make CMakeFiles/cmTC_a7dfd.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a7dfd.dir/OFF64_T.c.o
+/usr/bin/cc -DHAVE_STDDEF_H -DHAVE_STDINT_H -DHAVE_SYS_TYPES_H -D_LARGEFILE64_SOURCE=1  -fPIE -o CMakeFiles/cmTC_a7dfd.dir/OFF64_T.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CheckTypeSize/OFF64_T.c
+Linking C executable cmTC_a7dfd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7dfd.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_a7dfd.dir/OFF64_T.c.o -o cmTC_a7dfd 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the function fseeko exists passed with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_43722/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_43722.dir/build.make CMakeFiles/cmTC_43722.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_43722.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=fseeko -fPIE -o CMakeFiles/cmTC_43722.dir/CheckFunctionExists.c.o -c /usr/share/cmake-3.22/Modules/CheckFunctionExists.c
+Linking C executable cmTC_43722
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_43722.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=fseeko CMakeFiles/cmTC_43722.dir/CheckFunctionExists.c.o -o cmTC_43722 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the include file unistd.h exists passed with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4cf57/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4cf57.dir/build.make CMakeFiles/cmTC_4cf57.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4cf57.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_4cf57.dir/CheckIncludeFile.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_4cf57
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4cf57.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_4cf57.dir/CheckIncludeFile.c.o -o cmTC_4cf57 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+
+Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
+cc (Ubuntu 11.4.0-1ubuntu1~22.04) 11.4.0
+Copyright (C) 2021 Free Software Foundation, Inc.
+This is free software; see the source for copying conditions.  There is NO
+warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
+
+Performing C SOURCE FILE Test C_FLAG_WALL succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_030a2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_030a2.dir/build.make CMakeFiles/cmTC_030a2.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_030a2.dir/src.c.o
+/usr/bin/cc -DC_FLAG_WALL  -fPIE   -Wall -o CMakeFiles/cmTC_030a2.dir/src.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_030a2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_030a2.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_030a2.dir/src.c.o -o cmTC_030a2 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_FLAG_WALL succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7566b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7566b.dir/build.make CMakeFiles/cmTC_7566b.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7566b.dir/src.cxx.o
+/usr/bin/c++ -DCXX_FLAG_WALL  -Wall -Wextra -Wconversion -Wshadow -pedantic  -fPIE   -Wall -o CMakeFiles/cmTC_7566b.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7566b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7566b.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic  CMakeFiles/cmTC_7566b.dir/src.cxx.o -o cmTC_7566b 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_FLAG_WEXTRA succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_370dd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_370dd.dir/build.make CMakeFiles/cmTC_370dd.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_370dd.dir/src.c.o
+/usr/bin/cc -DC_FLAG_WEXTRA  -Wall  -fPIE   -Wextra -o CMakeFiles/cmTC_370dd.dir/src.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_370dd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_370dd.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall  CMakeFiles/cmTC_370dd.dir/src.c.o -o cmTC_370dd 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_FLAG_WEXTRA succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1ec39/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1ec39.dir/build.make CMakeFiles/cmTC_1ec39.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1ec39.dir/src.cxx.o
+/usr/bin/c++ -DCXX_FLAG_WEXTRA  -Wall -Wextra -Wconversion -Wshadow -pedantic -Wall  -fPIE   -Wextra -o CMakeFiles/cmTC_1ec39.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_1ec39
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1ec39.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic -Wall  CMakeFiles/cmTC_1ec39.dir/src.cxx.o -o cmTC_1ec39 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_FLAG_WUNDEF succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_19b60/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_19b60.dir/build.make CMakeFiles/cmTC_19b60.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_19b60.dir/src.c.o
+/usr/bin/cc -DC_FLAG_WUNDEF  -Wall -Wextra  -fPIE   -Wundef -o CMakeFiles/cmTC_19b60.dir/src.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_19b60
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_19b60.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wextra  CMakeFiles/cmTC_19b60.dir/src.c.o -o cmTC_19b60 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_FLAG_WUNDEF succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_36433/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_36433.dir/build.make CMakeFiles/cmTC_36433.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_36433.dir/src.cxx.o
+/usr/bin/c++ -DCXX_FLAG_WUNDEF  -Wall -Wextra -Wconversion -Wshadow -pedantic -Wall -Wextra  -fPIE   -Wundef -o CMakeFiles/cmTC_36433.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_36433
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_36433.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic -Wall -Wextra  CMakeFiles/cmTC_36433.dir/src.cxx.o -o cmTC_36433 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_FLAG_WSHADOW succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_87c06/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_87c06.dir/build.make CMakeFiles/cmTC_87c06.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_87c06.dir/src.c.o
+/usr/bin/cc -DC_FLAG_WSHADOW  -Wall -Wextra -Wundef  -fPIE   -Wshadow -o CMakeFiles/cmTC_87c06.dir/src.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_87c06
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_87c06.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wextra -Wundef  CMakeFiles/cmTC_87c06.dir/src.c.o -o cmTC_87c06 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_FLAG_WSHADOW succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cd333/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cd333.dir/build.make CMakeFiles/cmTC_cd333.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cd333.dir/src.cxx.o
+/usr/bin/c++ -DCXX_FLAG_WSHADOW  -Wall -Wextra -Wconversion -Wshadow -pedantic -Wall -Wextra -Wundef  -fPIE   -Wshadow -o CMakeFiles/cmTC_cd333.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_cd333
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cd333.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic -Wall -Wextra -Wundef  CMakeFiles/cmTC_cd333.dir/src.cxx.o -o cmTC_cd333 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_FLAG_WCAST_ALIGN succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_908d0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_908d0.dir/build.make CMakeFiles/cmTC_908d0.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_908d0.dir/src.c.o
+/usr/bin/cc -DC_FLAG_WCAST_ALIGN  -Wall -Wextra -Wundef -Wshadow  -fPIE   -Wcast-align -o CMakeFiles/cmTC_908d0.dir/src.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_908d0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_908d0.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wextra -Wundef -Wshadow  CMakeFiles/cmTC_908d0.dir/src.c.o -o cmTC_908d0 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_FLAG_WCAST_ALIGN succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a65cb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a65cb.dir/build.make CMakeFiles/cmTC_a65cb.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a65cb.dir/src.cxx.o
+/usr/bin/c++ -DCXX_FLAG_WCAST_ALIGN  -Wall -Wextra -Wconversion -Wshadow -pedantic -Wall -Wextra -Wundef -Wshadow  -fPIE   -Wcast-align -o CMakeFiles/cmTC_a65cb.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a65cb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a65cb.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic -Wall -Wextra -Wundef -Wshadow  CMakeFiles/cmTC_a65cb.dir/src.cxx.o -o cmTC_a65cb 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_FLAG_WCAST_QUAL succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_da8b4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_da8b4.dir/build.make CMakeFiles/cmTC_da8b4.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_da8b4.dir/src.c.o
+/usr/bin/cc -DC_FLAG_WCAST_QUAL  -Wall -Wextra -Wundef -Wshadow -Wcast-align  -fPIE   -Wcast-qual -o CMakeFiles/cmTC_da8b4.dir/src.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_da8b4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_da8b4.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wextra -Wundef -Wshadow -Wcast-align  CMakeFiles/cmTC_da8b4.dir/src.c.o -o cmTC_da8b4 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_FLAG_WCAST_QUAL succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d9e68/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d9e68.dir/build.make CMakeFiles/cmTC_d9e68.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d9e68.dir/src.cxx.o
+/usr/bin/c++ -DCXX_FLAG_WCAST_QUAL  -Wall -Wextra -Wconversion -Wshadow -pedantic -Wall -Wextra -Wundef -Wshadow -Wcast-align  -fPIE   -Wcast-qual -o CMakeFiles/cmTC_d9e68.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d9e68
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d9e68.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic -Wall -Wextra -Wundef -Wshadow -Wcast-align  CMakeFiles/cmTC_d9e68.dir/src.cxx.o -o cmTC_d9e68 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_FLAG_WSTRICT_PROTOTYPES succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_248c6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_248c6.dir/build.make CMakeFiles/cmTC_248c6.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_248c6.dir/src.c.o
+/usr/bin/cc -DC_FLAG_WSTRICT_PROTOTYPES  -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual  -fPIE   -Wstrict-prototypes -o CMakeFiles/cmTC_248c6.dir/src.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_248c6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_248c6.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual  CMakeFiles/cmTC_248c6.dir/src.c.o -o cmTC_248c6 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C SOURCE FILE Test C_FLAG_DDEBUGLEVEL_1 succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_26eb7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_26eb7.dir/build.make CMakeFiles/cmTC_26eb7.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_26eb7.dir/src.c.o
+/usr/bin/cc -DC_FLAG_DDEBUGLEVEL_1 -DDEBUGLEVEL=1  -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual -Wstrict-prototypes  -fPIE -o CMakeFiles/cmTC_26eb7.dir/src.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_26eb7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_26eb7.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual -Wstrict-prototypes  CMakeFiles/cmTC_26eb7.dir/src.c.o -o cmTC_26eb7 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_FLAG_DDEBUGLEVEL_1 succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_42b6c/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_42b6c.dir/build.make CMakeFiles/cmTC_42b6c.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_42b6c.dir/src.cxx.o
+/usr/bin/c++ -DCXX_FLAG_DDEBUGLEVEL_1 -DDEBUGLEVEL=1  -Wall -Wextra -Wconversion -Wshadow -pedantic -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual  -fPIE -o CMakeFiles/cmTC_42b6c.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_42b6c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_42b6c.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual  CMakeFiles/cmTC_42b6c.dir/src.cxx.o -o cmTC_42b6c 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test LD_FLAG_WL_Z_NOEXECSTACK succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2cc39/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2cc39.dir/build.make CMakeFiles/cmTC_2cc39.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2cc39.dir/src.c.o
+/usr/bin/cc -DLD_FLAG_WL_Z_NOEXECSTACK  -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual -Wstrict-prototypes -DDEBUGLEVEL=1  -fPIE -o CMakeFiles/cmTC_2cc39.dir/src.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.c
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.c:1:5: warning: function declaration isn't a prototype [-Wstrict-prototypes]
+    1 | int main() { return 0; }
+      |     ^~~~
+Linking C executable cmTC_2cc39
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2cc39.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual -Wstrict-prototypes -DDEBUGLEVEL=1  -Wl,-z,noexecstack CMakeFiles/cmTC_2cc39.dir/src.c.o -o cmTC_2cc39 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C SOURCE FILE Test C_FLAG_WA_NOEXECSTACK succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_47ea5/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_47ea5.dir/build.make CMakeFiles/cmTC_47ea5.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_47ea5.dir/src.c.o
+/usr/bin/cc -DC_FLAG_WA_NOEXECSTACK  -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual -Wstrict-prototypes -DDEBUGLEVEL=1  -fPIE   -Wa,--noexecstack -o CMakeFiles/cmTC_47ea5.dir/src.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_47ea5
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_47ea5.dir/link.txt --verbose=1
+/usr/bin/cc  -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual -Wstrict-prototypes -DDEBUGLEVEL=1   -Wl,-z,noexecstack  CMakeFiles/cmTC_47ea5.dir/src.c.o -o cmTC_47ea5 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main(void) { return 0; }
+Performing C++ SOURCE FILE Test CXX_FLAG_WA_NOEXECSTACK succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2df0d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2df0d.dir/build.make CMakeFiles/cmTC_2df0d.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2df0d.dir/src.cxx.o
+/usr/bin/c++ -DCXX_FLAG_WA_NOEXECSTACK  -Wall -Wextra -Wconversion -Wshadow -pedantic -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual -DDEBUGLEVEL=1  -fPIE   -Wa,--noexecstack -o CMakeFiles/cmTC_2df0d.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2df0d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2df0d.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic -Wall -Wextra -Wundef -Wshadow -Wcast-align -Wcast-qual -DDEBUGLEVEL=1   -Wl,-z,noexecstack  CMakeFiles/cmTC_2df0d.dir/src.cxx.o -o cmTC_2df0d 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Determining if the include file x86intrin.h exists passed with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fc263/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fc263.dir/build.make CMakeFiles/cmTC_fc263.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fc263.dir/CheckIncludeFile.cxx.o
+/usr/bin/c++   -Wall -Wextra -Wconversion -Wshadow -pedantic  -fPIE -o CMakeFiles/cmTC_fc263.dir/CheckIncludeFile.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+Linking CXX executable cmTC_fc263
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fc263.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic  CMakeFiles/cmTC_fc263.dir/CheckIncludeFile.cxx.o -o cmTC_fc263 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining size of __int128 passed with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_20a6e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_20a6e.dir/build.make CMakeFiles/cmTC_20a6e.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_20a6e.dir/INT128.cpp.o
+/usr/bin/c++   -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_20a6e.dir/INT128.cpp.o -c /home/delld/xyy/seall/build/CMakeFiles/CheckTypeSize/INT128.cpp
+/home/delld/xyy/seall/build/CMakeFiles/CheckTypeSize/INT128.cpp:28:22: warning: ISO C++ does not support ‘__int128’ for ‘type name’ [-Wpedantic]
+   28 | #define SIZE (sizeof(__int128))
+      |                      ^~~~~~~~
+/home/delld/xyy/seall/build/CMakeFiles/CheckTypeSize/INT128.cpp:30:12: note: in expansion of macro ‘SIZE’
+   30 |   ('0' + ((SIZE / 10000)%10)),
+      |            ^~~~
+/home/delld/xyy/seall/build/CMakeFiles/CheckTypeSize/INT128.cpp:28:22: warning: ISO C++ does not support ‘__int128’ for ‘type name’ [-Wpedantic]
+   28 | #define SIZE (sizeof(__int128))
+      |                      ^~~~~~~~
+/home/delld/xyy/seall/build/CMakeFiles/CheckTypeSize/INT128.cpp:31:12: note: in expansion of macro ‘SIZE’
+   31 |   ('0' + ((SIZE / 1000)%10)),
+      |            ^~~~
+/home/delld/xyy/seall/build/CMakeFiles/CheckTypeSize/INT128.cpp:28:22: warning: ISO C++ does not support ‘__int128’ for ‘type name’ [-Wpedantic]
+   28 | #define SIZE (sizeof(__int128))
+      |                      ^~~~~~~~
+/home/delld/xyy/seall/build/CMakeFiles/CheckTypeSize/INT128.cpp:32:12: note: in expansion of macro ‘SIZE’
+   32 |   ('0' + ((SIZE / 100)%10)),
+      |            ^~~~
+/home/delld/xyy/seall/build/CMakeFiles/CheckTypeSize/INT128.cpp:28:22: warning: ISO C++ does not support ‘__int128’ for ‘type name’ [-Wpedantic]
+   28 | #define SIZE (sizeof(__int128))
+      |                      ^~~~~~~~
+/home/delld/xyy/seall/build/CMakeFiles/CheckTypeSize/INT128.cpp:33:12: note: in expansion of macro ‘SIZE’
+   33 |   ('0' + ((SIZE / 10)%10)),
+      |            ^~~~
+/home/delld/xyy/seall/build/CMakeFiles/CheckTypeSize/INT128.cpp:28:22: warning: ISO C++ does not support ‘__int128’ for ‘type name’ [-Wpedantic]
+   28 | #define SIZE (sizeof(__int128))
+      |                      ^~~~~~~~
+/home/delld/xyy/seall/build/CMakeFiles/CheckTypeSize/INT128.cpp:34:12: note: in expansion of macro ‘SIZE’
+   34 |   ('0' +  (SIZE    % 10)),
+      |            ^~~~
+Linking CXX executable cmTC_20a6e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_20a6e.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 CMakeFiles/cmTC_20a6e.dir/INT128.cpp.o -o cmTC_20a6e 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C++ SOURCE FILE Test SEAL___BUILTIN_CLZLL_FOUND succeeded with the following compile output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_21dd7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_21dd7.dir/build.make CMakeFiles/cmTC_21dd7.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_21dd7.dir/src.cxx.o
+/usr/bin/c++ -DSEAL___BUILTIN_CLZLL_FOUND  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_21dd7.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:3:31: warning: unused variable ‘res’ [-Wunused-variable]
+    3 |                 volatile auto res = __builtin_clzll(0);
+      |                               ^~~
+Linking CXX executable cmTC_21dd7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_21dd7.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 CMakeFiles/cmTC_21dd7.dir/src.cxx.o -o cmTC_21dd7 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+            int main() {
+                volatile auto res = __builtin_clzll(0);
+                return 0;
+            }
+Performing C++ SOURCE FILE Test SEAL__ADDCARRY_U64_FOUND succeeded with the following compile output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a7148/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a7148.dir/build.make CMakeFiles/cmTC_a7148.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a7148.dir/src.cxx.o
+/usr/bin/c++ -DSEAL__ADDCARRY_U64_FOUND  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_a7148.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:27: warning: unused variable ‘res’ [-Wunused-variable]
+    5 |             volatile auto res = _addcarry_u64(0,0,0,&a);
+      |                           ^~~
+Linking CXX executable cmTC_a7148
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a7148.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 CMakeFiles/cmTC_a7148.dir/src.cxx.o -o cmTC_a7148 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+        #include <x86intrin.h>
+        int main() {
+            unsigned long long a;
+            volatile auto res = _addcarry_u64(0,0,0,&a);
+            return 0;
+        }
+Performing C++ SOURCE FILE Test SEAL__SUBBORROW_U64_FOUND succeeded with the following compile output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_1d7d2/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_1d7d2.dir/build.make CMakeFiles/cmTC_1d7d2.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_1d7d2.dir/src.cxx.o
+/usr/bin/c++ -DSEAL__SUBBORROW_U64_FOUND  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_1d7d2.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:27: warning: unused variable ‘res’ [-Wunused-variable]
+    5 |             volatile auto res = _subborrow_u64(0,0,0,&a);
+      |                           ^~~
+Linking CXX executable cmTC_1d7d2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1d7d2.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 CMakeFiles/cmTC_1d7d2.dir/src.cxx.o -o cmTC_1d7d2 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+...and run output:
+
+Return value: 1
+Source file was:
+
+        #include <x86intrin.h>
+        int main() {
+            unsigned long long a;
+            volatile auto res = _subborrow_u64(0,0,0,&a);
+            return 0;
+        }
+Determining if the explicit_bzero exist passed with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_58e4d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_58e4d.dir/build.make CMakeFiles/cmTC_58e4d.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_58e4d.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_58e4d.dir/CheckSymbolExists.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_58e4d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58e4d.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_58e4d.dir/CheckSymbolExists.c.o -o cmTC_58e4d 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+File /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <string.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef explicit_bzero
+  return ((int*)(&explicit_bzero))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Determining if the include file pthread.h exists passed with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_3a89d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_3a89d.dir/build.make CMakeFiles/cmTC_3a89d.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_3a89d.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE -o CMakeFiles/cmTC_3a89d.dir/CheckIncludeFile.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_3a89d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_3a89d.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_3a89d.dir/CheckIncludeFile.c.o -o cmTC_3a89d 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+
+Performing C SOURCE FILE Test CMAKE_HAVE_LIBC_PTHREAD succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e826f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e826f.dir/build.make CMakeFiles/cmTC_e826f.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e826f.dir/src.c.o
+/usr/bin/cc -DCMAKE_HAVE_LIBC_PTHREAD  -fPIE -o CMakeFiles/cmTC_e826f.dir/src.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.c
+Linking C executable cmTC_e826f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e826f.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_e826f.dir/src.c.o -o cmTC_e826f 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+#include <pthread.h>
+
+static void* test_func(void* data)
+{
+  return data;
+}
+
+int main(void)
+{
+  pthread_t thread;
+  pthread_create(&thread, NULL, test_func, NULL);
+  pthread_detach(thread);
+  pthread_cancel(thread);
+  pthread_join(thread, NULL);
+  pthread_atfork(NULL, NULL, NULL);
+  pthread_exit(NULL);
+
+  return 0;
+}
+
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5e124/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5e124.dir/build.make CMakeFiles/cmTC_5e124.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5e124.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -fPIE   -Wall -o CMakeFiles/cmTC_5e124.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5e124
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e124.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_5e124.dir/src.cxx.o -o cmTC_5e124 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cef19/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cef19.dir/build.make CMakeFiles/cmTC_cef19.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cef19.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall  -fPIE   -Wextra -o CMakeFiles/cmTC_cef19.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_cef19
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cef19.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall  CMakeFiles/cmTC_cef19.dir/src.cxx.o -o cmTC_cef19 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_78978/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_78978.dir/build.make CMakeFiles/cmTC_78978.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_78978.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra  -fPIE   -Wconversion -o CMakeFiles/cmTC_78978.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_78978
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_78978.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra  CMakeFiles/cmTC_78978.dir/src.cxx.o -o cmTC_78978 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8d155/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8d155.dir/build.make CMakeFiles/cmTC_8d155.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8d155.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra -Wconversion  -fPIE   -Wshadow -o CMakeFiles/cmTC_8d155.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8d155
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d155.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion  CMakeFiles/cmTC_8d155.dir/src.cxx.o -o cmTC_8d155 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f4b00/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f4b00.dir/build.make CMakeFiles/cmTC_f4b00.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f4b00.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra -Wconversion -Wshadow  -fPIE   -pedantic -o CMakeFiles/cmTC_f4b00.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f4b00
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f4b00.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow  CMakeFiles/cmTC_f4b00.dir/src.cxx.o -o cmTC_f4b00 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ce58a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ce58a.dir/build.make CMakeFiles/cmTC_ce58a.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ce58a.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_ce58a.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:31: warning: unused variable ‘fun’ [-Wunused-variable]
+    5 |                 volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+      |                               ^~~
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In instantiation of ‘main()::<lambda(auto:1)> [with auto:1 = int]’:
+/usr/include/c++/11/bits/stl_algo.h:3820:5:   required from ‘_Funct std::for_each(_IIter, _IIter, _Funct) [with _IIter = int*; _Funct = main()::<lambda(auto:1)>]’
+/usr/include/c++/11/bits/stl_algo.h:3849:17:   required from ‘_InputIterator std::for_each_n(_InputIterator, _Size, _Function) [with _InputIterator = int*; _Size = int; _Function = main()::<lambda(auto:1)>]’
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:52:   required from here
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:67: warning: unused parameter ‘b’ [-Wunused-parameter]
+    5 |                 volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+      |                                                              ~~~~~^
+Linking CXX executable cmTC_ce58a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ce58a.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 CMakeFiles/cmTC_ce58a.dir/src.cxx.o -o cmTC_ce58a 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_16ec3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_16ec3.dir/build.make CMakeFiles/cmTC_16ec3.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_16ec3.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -fPIE   -Wall -o CMakeFiles/cmTC_16ec3.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_16ec3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_16ec3.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_16ec3.dir/src.cxx.o -o cmTC_16ec3 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_50599/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_50599.dir/build.make CMakeFiles/cmTC_50599.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_50599.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall  -fPIE   -Wextra -o CMakeFiles/cmTC_50599.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_50599
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_50599.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall  CMakeFiles/cmTC_50599.dir/src.cxx.o -o cmTC_50599 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_08b97/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_08b97.dir/build.make CMakeFiles/cmTC_08b97.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_08b97.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra  -fPIE   -Wconversion -o CMakeFiles/cmTC_08b97.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_08b97
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08b97.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra  CMakeFiles/cmTC_08b97.dir/src.cxx.o -o cmTC_08b97 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f5554/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f5554.dir/build.make CMakeFiles/cmTC_f5554.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f5554.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra -Wconversion  -fPIE   -Wshadow -o CMakeFiles/cmTC_f5554.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f5554
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f5554.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion  CMakeFiles/cmTC_f5554.dir/src.cxx.o -o cmTC_f5554 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9c391/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9c391.dir/build.make CMakeFiles/cmTC_9c391.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9c391.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra -Wconversion -Wshadow  -fPIE   -pedantic -o CMakeFiles/cmTC_9c391.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9c391
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9c391.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow  CMakeFiles/cmTC_9c391.dir/src.cxx.o -o cmTC_9c391 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_c3a55/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_c3a55.dir/build.make CMakeFiles/cmTC_c3a55.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c3a55.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_c3a55.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:31: warning: unused variable ‘fun’ [-Wunused-variable]
+    5 |                 volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+      |                               ^~~
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In instantiation of ‘main()::<lambda(auto:1)> [with auto:1 = int]’:
+/usr/include/c++/11/bits/stl_algo.h:3820:5:   required from ‘_Funct std::for_each(_IIter, _IIter, _Funct) [with _IIter = int*; _Funct = main()::<lambda(auto:1)>]’
+/usr/include/c++/11/bits/stl_algo.h:3849:17:   required from ‘_InputIterator std::for_each_n(_InputIterator, _Size, _Function) [with _InputIterator = int*; _Size = int; _Function = main()::<lambda(auto:1)>]’
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:52:   required from here
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:67: warning: unused parameter ‘b’ [-Wunused-parameter]
+    5 |                 volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+      |                                                              ~~~~~^
+Linking CXX executable cmTC_c3a55
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c3a55.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 CMakeFiles/cmTC_c3a55.dir/src.cxx.o -o cmTC_c3a55 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f21b4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f21b4.dir/build.make CMakeFiles/cmTC_f21b4.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f21b4.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -fPIE   -Wall -o CMakeFiles/cmTC_f21b4.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f21b4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f21b4.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_f21b4.dir/src.cxx.o -o cmTC_f21b4 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_d72f8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_d72f8.dir/build.make CMakeFiles/cmTC_d72f8.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_d72f8.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall  -fPIE   -Wextra -o CMakeFiles/cmTC_d72f8.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_d72f8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_d72f8.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall  CMakeFiles/cmTC_d72f8.dir/src.cxx.o -o cmTC_d72f8 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fb9fb/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fb9fb.dir/build.make CMakeFiles/cmTC_fb9fb.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fb9fb.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra  -fPIE   -Wconversion -o CMakeFiles/cmTC_fb9fb.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_fb9fb
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fb9fb.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra  CMakeFiles/cmTC_fb9fb.dir/src.cxx.o -o cmTC_fb9fb 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_98675/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_98675.dir/build.make CMakeFiles/cmTC_98675.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_98675.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra -Wconversion  -fPIE   -Wshadow -o CMakeFiles/cmTC_98675.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_98675
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_98675.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion  CMakeFiles/cmTC_98675.dir/src.cxx.o -o cmTC_98675 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e7782/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e7782.dir/build.make CMakeFiles/cmTC_e7782.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e7782.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra -Wconversion -Wshadow  -fPIE   -pedantic -o CMakeFiles/cmTC_e7782.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e7782
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7782.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow  CMakeFiles/cmTC_e7782.dir/src.cxx.o -o cmTC_e7782 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ec6ba/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ec6ba.dir/build.make CMakeFiles/cmTC_ec6ba.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ec6ba.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_ec6ba.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:31: warning: unused variable ‘fun’ [-Wunused-variable]
+    5 |                 volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+      |                               ^~~
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In instantiation of ‘main()::<lambda(auto:1)> [with auto:1 = int]’:
+/usr/include/c++/11/bits/stl_algo.h:3820:5:   required from ‘_Funct std::for_each(_IIter, _IIter, _Funct) [with _IIter = int*; _Funct = main()::<lambda(auto:1)>]’
+/usr/include/c++/11/bits/stl_algo.h:3849:17:   required from ‘_InputIterator std::for_each_n(_InputIterator, _Size, _Function) [with _InputIterator = int*; _Size = int; _Function = main()::<lambda(auto:1)>]’
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:52:   required from here
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:67: warning: unused parameter ‘b’ [-Wunused-parameter]
+    5 |                 volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+      |                                                              ~~~~~^
+Linking CXX executable cmTC_ec6ba
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ec6ba.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 CMakeFiles/cmTC_ec6ba.dir/src.cxx.o -o cmTC_ec6ba 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_80ab1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_80ab1.dir/build.make CMakeFiles/cmTC_80ab1.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_80ab1.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -fPIE   -Wall -o CMakeFiles/cmTC_80ab1.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_80ab1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_80ab1.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_80ab1.dir/src.cxx.o -o cmTC_80ab1 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_efa95/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_efa95.dir/build.make CMakeFiles/cmTC_efa95.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_efa95.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall  -fPIE   -Wextra -o CMakeFiles/cmTC_efa95.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_efa95
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_efa95.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall  CMakeFiles/cmTC_efa95.dir/src.cxx.o -o cmTC_efa95 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7c9c1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7c9c1.dir/build.make CMakeFiles/cmTC_7c9c1.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7c9c1.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra  -fPIE   -Wconversion -o CMakeFiles/cmTC_7c9c1.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7c9c1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7c9c1.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra  CMakeFiles/cmTC_7c9c1.dir/src.cxx.o -o cmTC_7c9c1 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8a755/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8a755.dir/build.make CMakeFiles/cmTC_8a755.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8a755.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra -Wconversion  -fPIE   -Wshadow -o CMakeFiles/cmTC_8a755.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8a755
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a755.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion  CMakeFiles/cmTC_8a755.dir/src.cxx.o -o cmTC_8a755 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8c1e0/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8c1e0.dir/build.make CMakeFiles/cmTC_8c1e0.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8c1e0.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra -Wconversion -Wshadow  -fPIE   -pedantic -o CMakeFiles/cmTC_8c1e0.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8c1e0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8c1e0.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow  CMakeFiles/cmTC_8c1e0.dir/src.cxx.o -o cmTC_8c1e0 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ddf8e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ddf8e.dir/build.make CMakeFiles/cmTC_ddf8e.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ddf8e.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_ddf8e.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:31: warning: unused variable ‘fun’ [-Wunused-variable]
+    5 |                 volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+      |                               ^~~
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In instantiation of ‘main()::<lambda(auto:1)> [with auto:1 = int]’:
+/usr/include/c++/11/bits/stl_algo.h:3820:5:   required from ‘_Funct std::for_each(_IIter, _IIter, _Funct) [with _IIter = int*; _Funct = main()::<lambda(auto:1)>]’
+/usr/include/c++/11/bits/stl_algo.h:3849:17:   required from ‘_InputIterator std::for_each_n(_InputIterator, _Size, _Function) [with _InputIterator = int*; _Size = int; _Function = main()::<lambda(auto:1)>]’
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:52:   required from here
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:67: warning: unused parameter ‘b’ [-Wunused-parameter]
+    5 |                 volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+      |                                                              ~~~~~^
+Linking CXX executable cmTC_ddf8e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ddf8e.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 CMakeFiles/cmTC_ddf8e.dir/src.cxx.o -o cmTC_ddf8e 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_924a3/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_924a3.dir/build.make CMakeFiles/cmTC_924a3.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_924a3.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -fPIE   -Wall -o CMakeFiles/cmTC_924a3.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_924a3
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_924a3.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_924a3.dir/src.cxx.o -o cmTC_924a3 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e3bdc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e3bdc.dir/build.make CMakeFiles/cmTC_e3bdc.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e3bdc.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall  -fPIE   -Wextra -o CMakeFiles/cmTC_e3bdc.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e3bdc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e3bdc.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall  CMakeFiles/cmTC_e3bdc.dir/src.cxx.o -o cmTC_e3bdc 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5eda4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5eda4.dir/build.make CMakeFiles/cmTC_5eda4.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5eda4.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra  -fPIE   -Wconversion -o CMakeFiles/cmTC_5eda4.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5eda4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5eda4.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra  CMakeFiles/cmTC_5eda4.dir/src.cxx.o -o cmTC_5eda4 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ef96b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ef96b.dir/build.make CMakeFiles/cmTC_ef96b.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ef96b.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra -Wconversion  -fPIE   -Wshadow -o CMakeFiles/cmTC_ef96b.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ef96b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ef96b.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion  CMakeFiles/cmTC_ef96b.dir/src.cxx.o -o cmTC_ef96b 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5fee6/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5fee6.dir/build.make CMakeFiles/cmTC_5fee6.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5fee6.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra -Wconversion -Wshadow  -fPIE   -pedantic -o CMakeFiles/cmTC_5fee6.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5fee6
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5fee6.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow  CMakeFiles/cmTC_5fee6.dir/src.cxx.o -o cmTC_5fee6 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_45f76/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_45f76.dir/build.make CMakeFiles/cmTC_45f76.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_45f76.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_45f76.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:31: warning: unused variable ‘fun’ [-Wunused-variable]
+    5 |                 volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+      |                               ^~~
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In instantiation of ‘main()::<lambda(auto:1)> [with auto:1 = int]’:
+/usr/include/c++/11/bits/stl_algo.h:3820:5:   required from ‘_Funct std::for_each(_IIter, _IIter, _Funct) [with _IIter = int*; _Funct = main()::<lambda(auto:1)>]’
+/usr/include/c++/11/bits/stl_algo.h:3849:17:   required from ‘_InputIterator std::for_each_n(_InputIterator, _Size, _Function) [with _InputIterator = int*; _Size = int; _Function = main()::<lambda(auto:1)>]’
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:52:   required from here
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:67: warning: unused parameter ‘b’ [-Wunused-parameter]
+    5 |                 volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+      |                                                              ~~~~~^
+Linking CXX executable cmTC_45f76
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_45f76.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 CMakeFiles/cmTC_45f76.dir/src.cxx.o -o cmTC_45f76 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_7eafd/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_7eafd.dir/build.make CMakeFiles/cmTC_7eafd.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_7eafd.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_7eafd.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_7eafd
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_7eafd.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_7eafd.dir/src.cxx.o -o cmTC_7eafd 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Determining if the include file dlfcn.h exists passed with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_55a5d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_55a5d.dir/build.make CMakeFiles/cmTC_55a5d.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_55a5d.dir/CheckIncludeFile.c.o
+/usr/bin/cc   -fPIE -std=gnu99 -o CMakeFiles/cmTC_55a5d.dir/CheckIncludeFile.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/CheckIncludeFile.c
+Linking C executable cmTC_55a5d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_55a5d.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_55a5d.dir/CheckIncludeFile.c.o -o cmTC_55a5d 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+
+Determining if the getauxval exist passed with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_65432/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_65432.dir/build.make CMakeFiles/cmTC_65432.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_65432.dir/CheckSymbolExists.c.o
+/usr/bin/cc   -fPIE -std=gnu99 -o CMakeFiles/cmTC_65432.dir/CheckSymbolExists.c.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+Linking C executable cmTC_65432
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_65432.dir/link.txt --verbose=1
+/usr/bin/cc CMakeFiles/cmTC_65432.dir/CheckSymbolExists.c.o -o cmTC_65432 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+File /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <sys/auxv.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef getauxval
+  return ((int*)(&getauxval))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8d378/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8d378.dir/build.make CMakeFiles/cmTC_8d378.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8d378.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_8d378.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8d378
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8d378.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_8d378.dir/src.cxx.o -o cmTC_8d378 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_288a1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_288a1.dir/build.make CMakeFiles/cmTC_288a1.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_288a1.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -fPIE   -Wall -o CMakeFiles/cmTC_288a1.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_288a1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_288a1.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_288a1.dir/src.cxx.o -o cmTC_288a1 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_2448e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_2448e.dir/build.make CMakeFiles/cmTC_2448e.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_2448e.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall  -fPIE   -Wextra -o CMakeFiles/cmTC_2448e.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_2448e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_2448e.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall  CMakeFiles/cmTC_2448e.dir/src.cxx.o -o cmTC_2448e 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9a5b9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9a5b9.dir/build.make CMakeFiles/cmTC_9a5b9.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9a5b9.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra  -fPIE   -Wconversion -o CMakeFiles/cmTC_9a5b9.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9a5b9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9a5b9.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra  CMakeFiles/cmTC_9a5b9.dir/src.cxx.o -o cmTC_9a5b9 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6fbca/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6fbca.dir/build.make CMakeFiles/cmTC_6fbca.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6fbca.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra -Wconversion  -fPIE   -Wshadow -o CMakeFiles/cmTC_6fbca.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_6fbca
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6fbca.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion  CMakeFiles/cmTC_6fbca.dir/src.cxx.o -o cmTC_6fbca 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ea096/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ea096.dir/build.make CMakeFiles/cmTC_ea096.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ea096.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra -Wconversion -Wshadow  -fPIE   -pedantic -o CMakeFiles/cmTC_ea096.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ea096
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ea096.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow  CMakeFiles/cmTC_ea096.dir/src.cxx.o -o cmTC_ea096 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_fd93b/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_fd93b.dir/build.make CMakeFiles/cmTC_fd93b.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_fd93b.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_fd93b.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:31: warning: unused variable ‘fun’ [-Wunused-variable]
+    5 |                 volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+      |                               ^~~
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In instantiation of ‘main()::<lambda(auto:1)> [with auto:1 = int]’:
+/usr/include/c++/11/bits/stl_algo.h:3820:5:   required from ‘_Funct std::for_each(_IIter, _IIter, _Funct) [with _IIter = int*; _Funct = main()::<lambda(auto:1)>]’
+/usr/include/c++/11/bits/stl_algo.h:3849:17:   required from ‘_InputIterator std::for_each_n(_InputIterator, _Size, _Function) [with _InputIterator = int*; _Size = int; _Function = main()::<lambda(auto:1)>]’
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:52:   required from here
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:67: warning: unused parameter ‘b’ [-Wunused-parameter]
+    5 |                 volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+      |                                                              ~~~~~^
+Linking CXX executable cmTC_fd93b
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_fd93b.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 CMakeFiles/cmTC_fd93b.dir/src.cxx.o -o cmTC_fd93b 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_116f7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_116f7.dir/build.make CMakeFiles/cmTC_116f7.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_116f7.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_116f7.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_116f7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_116f7.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_116f7.dir/src.cxx.o -o cmTC_116f7 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_e7a0f/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_e7a0f.dir/build.make CMakeFiles/cmTC_e7a0f.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_e7a0f.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_e7a0f.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_e7a0f
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e7a0f.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_e7a0f.dir/src.cxx.o -o cmTC_e7a0f 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_568bc/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_568bc.dir/build.make CMakeFiles/cmTC_568bc.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_568bc.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_568bc.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_568bc
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_568bc.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_568bc.dir/src.cxx.o -o cmTC_568bc 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5a906/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5a906.dir/build.make CMakeFiles/cmTC_5a906.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5a906.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_5a906.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5a906
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5a906.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_5a906.dir/src.cxx.o -o cmTC_5a906 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5c9b4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5c9b4.dir/build.make CMakeFiles/cmTC_5c9b4.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5c9b4.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_5c9b4.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5c9b4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c9b4.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_5c9b4.dir/src.cxx.o -o cmTC_5c9b4 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ccf1d/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ccf1d.dir/build.make CMakeFiles/cmTC_ccf1d.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ccf1d.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_ccf1d.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ccf1d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ccf1d.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_ccf1d.dir/src.cxx.o -o cmTC_ccf1d 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_f46a9/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_f46a9.dir/build.make CMakeFiles/cmTC_f46a9.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_f46a9.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_f46a9.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_f46a9
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f46a9.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_f46a9.dir/src.cxx.o -o cmTC_f46a9 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_86cb4/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_86cb4.dir/build.make CMakeFiles/cmTC_86cb4.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_86cb4.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_86cb4.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_86cb4
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_86cb4.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_86cb4.dir/src.cxx.o -o cmTC_86cb4 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_9947e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_9947e.dir/build.make CMakeFiles/cmTC_9947e.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_9947e.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_9947e.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_9947e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_9947e.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_9947e.dir/src.cxx.o -o cmTC_9947e 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_cf4d7/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_cf4d7.dir/build.make CMakeFiles/cmTC_cf4d7.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_cf4d7.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_cf4d7.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_cf4d7
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_cf4d7.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_cf4d7.dir/src.cxx.o -o cmTC_cf4d7 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4a392/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4a392.dir/build.make CMakeFiles/cmTC_4a392.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4a392.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_4a392.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4a392
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4a392.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_4a392.dir/src.cxx.o -o cmTC_4a392 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_62427/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_62427.dir/build.make CMakeFiles/cmTC_62427.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_62427.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_62427.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_62427
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62427.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_62427.dir/src.cxx.o -o cmTC_62427 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_8a22a/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_8a22a.dir/build.make CMakeFiles/cmTC_8a22a.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_8a22a.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_8a22a.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_8a22a
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8a22a.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_8a22a.dir/src.cxx.o -o cmTC_8a22a 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_a443e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_a443e.dir/build.make CMakeFiles/cmTC_a443e.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_a443e.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_a443e.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_a443e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_a443e.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_a443e.dir/src.cxx.o -o cmTC_a443e 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5e819/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5e819.dir/build.make CMakeFiles/cmTC_5e819.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5e819.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_5e819.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_5e819
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5e819.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_5e819.dir/src.cxx.o -o cmTC_5e819 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_ecdc1/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_ecdc1.dir/build.make CMakeFiles/cmTC_ecdc1.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_ecdc1.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_ecdc1.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_ecdc1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ecdc1.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_ecdc1.dir/src.cxx.o -o cmTC_ecdc1 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_6bab8/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_6bab8.dir/build.make CMakeFiles/cmTC_6bab8.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_6bab8.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_6bab8.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_6bab8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_6bab8.dir/link.txt --verbose=1
+/usr/bin/c++   -O0 -std=c++17 CMakeFiles/cmTC_6bab8.dir/src.cxx.o -o cmTC_6bab8 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_37365/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_37365.dir/build.make CMakeFiles/cmTC_37365.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_37365.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -fPIE   -Wall -o CMakeFiles/cmTC_37365.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_37365
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_37365.dir/link.txt --verbose=1
+/usr/bin/c++ CMakeFiles/cmTC_37365.dir/src.cxx.o -o cmTC_37365 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_62b31/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_62b31.dir/build.make CMakeFiles/cmTC_62b31.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_62b31.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall  -fPIE   -Wextra -o CMakeFiles/cmTC_62b31.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_62b31
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_62b31.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall  CMakeFiles/cmTC_62b31.dir/src.cxx.o -o cmTC_62b31 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_54290/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_54290.dir/build.make CMakeFiles/cmTC_54290.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_54290.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra  -fPIE   -Wconversion -o CMakeFiles/cmTC_54290.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_54290
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_54290.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra  CMakeFiles/cmTC_54290.dir/src.cxx.o -o cmTC_54290 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_4513e/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_4513e.dir/build.make CMakeFiles/cmTC_4513e.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_4513e.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra -Wconversion  -fPIE   -Wshadow -o CMakeFiles/cmTC_4513e.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_4513e
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4513e.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion  CMakeFiles/cmTC_4513e.dir/src.cxx.o -o cmTC_4513e 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test flag_supported succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_515ac/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_515ac.dir/build.make CMakeFiles/cmTC_515ac.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_515ac.dir/src.cxx.o
+/usr/bin/c++ -Dflag_supported  -Wall -Wextra -Wconversion -Wshadow  -fPIE   -pedantic -o CMakeFiles/cmTC_515ac.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+Linking CXX executable cmTC_515ac
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_515ac.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow  CMakeFiles/cmTC_515ac.dir/src.cxx.o -o cmTC_515ac 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+int main() { return 0; }
+Performing C++ SOURCE FILE Test USE_STD_FOR_EACH_N succeeded with the following output:
+Change Dir: /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake -f Makefile cmTC_5c983/fast && /usr/bin/gmake  -f CMakeFiles/cmTC_5c983.dir/build.make CMakeFiles/cmTC_5c983.dir/build
+gmake[1]: Entering directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5c983.dir/src.cxx.o
+/usr/bin/c++ -DUSE_STD_FOR_EACH_N  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 -fPIE -o CMakeFiles/cmTC_5c983.dir/src.cxx.o -c /home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In function ‘int main()’:
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:31: warning: unused variable ‘fun’ [-Wunused-variable]
+    5 |                 volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+      |                               ^~~
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx: In instantiation of ‘main()::<lambda(auto:1)> [with auto:1 = int]’:
+/usr/include/c++/11/bits/stl_algo.h:3820:5:   required from ‘_Funct std::for_each(_IIter, _IIter, _Funct) [with _IIter = int*; _Funct = main()::<lambda(auto:1)>]’
+/usr/include/c++/11/bits/stl_algo.h:3849:17:   required from ‘_InputIterator std::for_each_n(_InputIterator, _Size, _Function) [with _InputIterator = int*; _Size = int; _Function = main()::<lambda(auto:1)>]’
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:52:   required from here
+/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp/src.cxx:5:67: warning: unused parameter ‘b’ [-Wunused-parameter]
+    5 |                 volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+      |                                                              ~~~~~^
+Linking CXX executable cmTC_5c983
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_5c983.dir/link.txt --verbose=1
+/usr/bin/c++  -Wall -Wextra -Wconversion -Wshadow -pedantic  -O0 -std=c++17 CMakeFiles/cmTC_5c983.dir/src.cxx.o -o cmTC_5c983 
+gmake[1]: Leaving directory '/home/delld/xyy/seall/build/CMakeFiles/CMakeTmp'
+
+
+Source file was:
+
+            #include <algorithm>
+            int main() {
+                int a[1]{ 0 };
+                volatile auto fun = std::for_each_n(a, 1, [](auto b) {});
+                return 0;
+            }

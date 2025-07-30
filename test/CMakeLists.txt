@@ -9,23 +9,21 @@ set(CMAKE_CXX_STANDARD 17)
 project(test_bicyclic_mat_mul)
 
 # Import Microsoft SEAL
-find_package(SEAL 4.1.1 EXACT REQUIRED
+find_package(SEAL 4.1.2 EXACT REQUIRED
               PATHS /usr/local) 
 
 # Import OpenMP
-# FIND_PACKAGE( OpenMP REQUIRED)
-# if(OPENMP_FOUND)
-#     message("OPENMP FOUND")
-#     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
-#     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
-#     set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_EXE_LINKER_FLAGS}")
-# endif()
+FIND_PACKAGE( OpenMP REQUIRED)
+if(OPENMP_FOUND)
+    message("OPENMP FOUND")
+    set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} ${OpenMP_C_FLAGS}")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} ${OpenMP_CXX_FLAGS}")
+    set(CMAKE_EXE_LINKER_FLAGS "${CMAKE_EXE_LINKER_FLAGS} ${OpenMP_EXE_LINKER_FLAGS}")
+endif()
 
 
 set(REAL_SOURCE_DIR ${PROJECT_SOURCE_DIR}/../src)
 set(TEST_SOURCE_DIR ${PROJECT_SOURCE_DIR})
-
-
 
 add_executable(test_enc_mat_mul
                ${TEST_SOURCE_DIR}/test_enc_mat_mul.cpp

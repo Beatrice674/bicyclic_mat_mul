@@ -16,7 +16,7 @@ void run_coprime_mat_mul_I(size_t n, size_t m, size_t p, size_t poly_modulus_deg
 void run_coprime_mat_mul_II(size_t n, size_t m, size_t p, size_t poly_modulus_degree);
 void test_coprime_mat_mul(size_t n, size_t m, size_t p,
                           CKKSEncoder &encoder, Encryptor &encryptor, double scale, Evaluator &evaluator,
-                          RelinKeys &relin_keys, GaloisKeys &gal_keys, Decryptor &decryptor);
+                          RelinKeys &relin_keys, GaloisKeys &gal_keys, Decryptor &decryptor, int method_choice);
 
 void run_long_mat_mul_I(size_t n, size_t m, size_t p,size_t poly_modulus_degree);
 void run_long_mat_mul_II(size_t n, size_t m, size_t p,size_t poly_modulus_degree);
@@ -53,7 +53,7 @@ void run_strassen_block_coprime_mat_mul(size_t n, size_t m, size_t p,size_t s_n,
 void run_strassen_block_coprime_mat_mul_I(size_t n, size_t m, size_t p,size_t s_n,size_t s_m,size_t s_p, size_t poly_modulus_degree);
 void test_strassen_block_coprime_mat_mul(size_t n, size_t m, size_t p, size_t s_n,size_t s_m,size_t s_p,
                                          CKKSEncoder &encoder, Encryptor &encryptor, double scale, Evaluator &evaluator, 
-                                         RelinKeys &relin_keys, GaloisKeys &gal_keys, Decryptor &decryptor);
+                                         RelinKeys &relin_keys, GaloisKeys &gal_keys, Decryptor &decryptor, int method_choice);
 
 
 void run_naive_block_jiang_mat_mul(size_t n, size_t m, size_t p, size_t poly_modulus_degree);
@@ -64,7 +64,7 @@ void test_naive_block_jiang_mat_mul(size_t n, size_t m, size_t p,
 void run_naive_block_coprime_mat_mul(size_t n, size_t m, size_t p,size_t s_n,size_t s_m,size_t s_p, size_t poly_modulus_degree);
 void test_naive_block_coprime_mat_mul(size_t n, size_t m, size_t p,size_t s_n,size_t s_m,size_t s_p, 
                                       CKKSEncoder &encoder, Encryptor &encryptor, double scale, Evaluator &evaluator, 
-                                      RelinKeys &relin_keys, GaloisKeys &gal_keys, Decryptor &decryptor);
+                                      RelinKeys &relin_keys, GaloisKeys &gal_keys, Decryptor &decryptor, int method_choice);
 
 
 void run_coprime_mat_mul_imporve_log(size_t n, size_t m, size_t p, size_t poly_modulus_degree);
@@ -130,10 +130,39 @@ int main()
         switch (selection)
         {
         case 1:
-            run_coprime_mat_mul_I(44, 45, 43, 8192); // 140: 0.338726 s
-            run_coprime_mat_mul_I(61, 64, 63, 16384);// 140: 1.16957 s
-            run_coprime_mat_mul_I(29, 128, 31, 16384);// 140: 1.16957 s
-            run_coprime_mat_mul_I(89, 91, 90, 32768);// 140: 3.70669 s
+            // small dimensions
+            cout << "Running coprime matrix multiplication with small dimensions..." << endl;
+            run_coprime_mat_mul_I(64, 31, 29, 8192);
+            run_coprime_mat_mul_I(44, 45, 43, 8192);
+            run_coprime_mat_mul_I(31, 64, 29, 8192);
+
+            run_coprime_mat_mul_I(128, 31, 29, 16384);
+            run_coprime_mat_mul_I(61, 64, 63, 16384);
+            run_coprime_mat_mul_I(29, 128, 31, 16384);
+
+            run_coprime_mat_mul_I(128, 63, 61, 32768);
+            run_coprime_mat_mul_I(89, 91, 90, 32768);
+            run_coprime_mat_mul_I(63, 128, 61, 32768); 
+
+            // run_coprime_mat_mul_I(8, 8, 8, 8192);
+            // run_coprime_mat_mul_I(44, 45, 43, 8192); // 140: 0.338726 s
+            // run_coprime_mat_mul_I(31, 64, 29, 8192); 
+            // run_coprime_mat_mul_I(61, 64, 63, 16384);// 140: 1.16957 s
+            // run_coprime_mat_mul_I(29, 128, 31, 16384);// 140: 1.16957 s
+            // run_coprime_mat_mul_I(89, 91, 90, 32768);// 140: 3.70669 s
+            // run_coprime_mat_mul_I(63, 128, 61, 32768); 
+            // test for different dims
+            // run_coprime_mat_mul_I(64, 31, 29, 8192); 
+            // run_coprime_mat_mul_I(128, 31, 29, 16384);
+            // run_coprime_mat_mul_I(128, 63, 61, 32768);
+            // with zheng
+            // run_coprime_mat_mul_I(16, 19, 17, 8192);
+            // run_coprime_mat_mul_I(32, 35, 33, 8192);
+            // run_strassen_block_coprime_mat_mul(2*32,2*35,2*33,32,35,33,8192);
+
+            // run_coprime_mat_mul_I(16, 19, 17, 16384);
+            // run_coprime_mat_mul_I(32, 35, 33, 16384);
+            // run_strassen_block_coprime_mat_mul(2*32,2*35,2*33,32,35,33,16384);
             break;
         case 2:
             run_coprime_mat_mul_imporve_log_I(15, 16, 17, 8192);// 140: 0.012744 s
@@ -198,12 +227,21 @@ int main()
             run_coprime_mat_mul_imporve_log_I(31, 16, 33, 32768);// 140: 0.051467 s
             break;
         case 11:
+            // (64,64,64)
+            cout << "-----------------------(64,64,64)-----------------------" << endl;
+            run_jiang_mat_mul(64,64,64,8192);// 1.83336 s
+    
+            run_naive_block_coprime_mat_mul(2*32,2*35,2*33,32,35,33,8192);
+            run_strassen_block_coprime_mat_mul(2*32,2*35,2*33,32,35,33,8192);
+
+            run_coprime_mat_mul_I(64, 65, 67, 32768); 
+
             //(128,128,128)
+            cout << "-------------------------(128,128,128)---------------------" << endl;
             run_naive_block_jiang_mat_mul(2*64,2*64,2*64,8192);// 12.347194 s
             run_naive_block_jiang_mat_mul(128,128,128,32768);// 16.251344 s
 
             run_strassen_block_jiang_mat_mul(2*64,2*64,2*64,8192);// 10.848159 s
-            
 
             run_naive_block_coprime_mat_mul(3*43,3*45,3*44,43,45,44,8192);// 8.131559 s
             run_naive_block_coprime_mat_mul(2*64,2*67,2*65,64,67,65,32768);// 14.546507 s
@@ -211,14 +249,36 @@ int main()
             run_strassen_block_coprime_mat_mul(4*32,4*35,4*33,32,35,33,8192);// 8.95519 s
             run_strassen_block_coprime_mat_mul(2*64,2*67,2*65,64,67,65,32768);// 13.010182 s
 
-            run_naive_block_coprime_mat_mul_imporve_log_I(9*15,8*16,8*17,15,16,17,8192);//4.91862 s
-            run_naive_block_coprime_mat_mul_imporve_log_I(7*21,4*32,6*23,21,32,23,32768);//9.159733 s
+            //(256,256,256)
+            cout << "-------------------------(256,256,256)---------------------" << endl;
+            run_naive_block_jiang_mat_mul(4*64,4*64,4*64,8192);// 89.33 s
+            run_naive_block_jiang_mat_mul(2*128,2*128,2*128,32768);// 112.01 s
 
-            run_strassen_block_coprime_mat_mul_imporve_log_I(16*11,16*8,16*9,11,8,9,8192);//93.982504 s
-            run_strassen_block_coprime_mat_mul_imporve_log_I(8*19,8*16,8*17,19,16,17,32768);//144.689395 s
+            run_strassen_block_jiang_mat_mul(4*64,4*64,4*64,8192);// 71.54 s
+            run_strassen_block_jiang_mat_mul(2*128,2*128,2*128,32768);// 97.70 s
+
+            run_naive_block_coprime_mat_mul(6*44,6*45,6*43,44,45,43,8192);// 59.57 s
+            run_naive_block_coprime_mat_mul(3*88,3*89,3*87,88,89,87,32768);// 73.35 s
+
+            run_strassen_block_coprime_mat_mul(8*32,8*35,8*33,32,35,33,8192);// 56.98 s
+            run_strassen_block_coprime_mat_mul(4*64,4*67,4*65,64,67,65,32768);// 80.99 s
+
+            //(512,512,512)
+            cout << "-------------------------(512,512,512)---------------------" << endl;
+            // 8192
+            run_naive_block_jiang_mat_mul(8*64,8*64,8*64,8192);// 727.73 s
+            run_strassen_block_jiang_mat_mul(8*64,8*64,8*64,8192);// 479.19 s
+
+            run_naive_block_coprime_mat_mul(12*43,12*45,12*44,43,45,44,8192);// 489.83 s
+            run_strassen_block_coprime_mat_mul(16*32,16*35,16*33,32,35,33,8192);// 390.26 s
+
+            // 32768
+            run_naive_block_jiang_mat_mul(4*128,4*128,4*128,32768);
+            run_strassen_block_jiang_mat_mul(4*128,4*128,4*128,32768);
             
-            run_long_mat_mul_II(128, 131, 129,8192); // 18.2931 s+7.864 s
-            run_long_mat_mul_II(128, 131, 129,32768); // 110.99 s
+            run_naive_block_coprime_mat_mul(6*88,6*89,6*87,88,89,87,32768);
+            run_strassen_block_coprime_mat_mul(8*64,8*67,8*65,64,67,65,32768);
+
             break;
         case 12:
             //(256,256,256)
@@ -234,31 +294,40 @@ int main()
             run_strassen_block_coprime_mat_mul(8*32,8*35,8*33,32,35,33,8192);// 56.98 s
             run_strassen_block_coprime_mat_mul(4*64,4*67,4*65,64,67,65,32768);// 80.99 s
 
-            run_naive_block_coprime_mat_mul_imporve_log_I(18*15,16*16,16*17,15,16,17,8192);// 81.6179 s
-            run_naive_block_coprime_mat_mul_imporve_log_I(13*21,8*32,12*23,21,32,23,32768);//90.0473 s
+            // run_naive_block_coprime_mat_mul_imporve_log_I(18*15,16*16,16*17,15,16,17,8192);// 81.6179 s
+            // run_naive_block_coprime_mat_mul_imporve_log_I(13*21,8*32,12*23,21,32,23,32768);//90.0473 s
 
-            run_long_mat_mul_I(256, 259, 257,8192); // 42.98 s
-            // run_long_mat_mul_I(256, 259, 257,32768); // 160 G memory, 281 for keygen + 86s 
+            // run_long_mat_mul_I(256, 259, 257,8192); // 42.98 s
+            // // run_long_mat_mul_I(256, 259, 257,32768); // 160 G memory, 281 for keygen + 86s 
             
-            run_long_mat_mul_II(256, 259, 257,32768); // 110.99 s
-            // run_long_mat_mul_II(256, 259, 257,8192); // 144.362 s
+            // run_long_mat_mul_II(256, 259, 257,32768); // 110.99 s
+            // // run_long_mat_mul_II(256, 259, 257,8192); // 144.362 s
             break;
         case 13:
             // (512,512,512)
+            // 8192
             run_naive_block_jiang_mat_mul(8*64,8*64,8*64,8192);// 727.73 s
-            run_naive_block_coprime_mat_mul(12*43,12*45,12*44,43,45,44,8192);// 489.83 s
-
             run_strassen_block_jiang_mat_mul(8*64,8*64,8*64,8192);// 479.19 s
+
+            run_naive_block_coprime_mat_mul(12*43,12*45,12*44,43,45,44,8192);// 489.83 s
             run_strassen_block_coprime_mat_mul(16*32,16*35,16*33,32,35,33,8192);// 390.26 s
-            run_long_mat_mul_I(512,515,513,8192);// 181.03 s
+
+            // 32768
+            run_naive_block_jiang_mat_mul(4*128,4*128,4*128,32768);
+            run_strassen_block_jiang_mat_mul(4*128,4*128,4*128,32768);
+            
+            run_naive_block_coprime_mat_mul(6*88,6*89,6*87,88,89,87,32768);
+            run_strassen_block_coprime_mat_mul(8*64,8*67,8*65,64,67,65,32768);
+
+            // run_long_mat_mul_I(512,515,513,8192);// 181.03 s
             
             // (1024,1024,1024)
-            run_naive_block_jiang_mat_mul(16*64,16*64,16*64,8192);// 6028.15 s
-            run_naive_block_coprime_mat_mul(24*43,24*45,24*44,43,45,44,8192);// 4239.80 s
+            // run_naive_block_jiang_mat_mul(16*64,16*64,16*64,8192);// 6028.15 s
+            // run_naive_block_coprime_mat_mul(24*43,24*45,24*44,43,45,44,8192);// 4239.80 s
 
-            run_strassen_block_jiang_mat_mul(16*64,16*64,16*64,8192);// 3514.14 s
-            run_strassen_block_coprime_mat_mul_I(32*32,32*35,32*33,32,35,33,8192);// log\Delta = 40. 2757.16 s
-            run_long_mat_mul_I(1024,1027,1025,8192);// 1200.76 s
+            // run_strassen_block_jiang_mat_mul(16*64,16*64,16*64,8192);// 3514.14 s
+            // run_strassen_block_coprime_mat_mul_I(32*32,32*35,32*33,32,35,33,8192);// log\Delta = 40. 2757.16 s
+            // run_long_mat_mul_I(1024,1027,1025,8192);// 1200.76 s
             break;
         case 14:
             // Algo.5
@@ -314,6 +383,51 @@ int main()
             run_lu_mat_mul(16,17,6903,8);// 2.64838 s
             run_lu_mat_mul(32,33,8225,8);// 9.78487 s
             // run_lu_mat_mul(63,64,13847,8);// 36.022 s
+            break;
+
+            case 17:
+            // openmp
+            // (64,64,64)
+            cout << "-----------------------(64,64,64)-----------------------" << endl;
+            cout << "-----------------------8192 part-----------------------" << endl;
+            run_jiang_mat_mul(64,64,64,8192);// 1.83336 s
+            run_strassen_block_coprime_mat_mul(2*32,2*35,2*33,32,35,33,8192);
+
+            cout << "-----------------------32768 part-----------------------" << endl;            
+            run_coprime_mat_mul_I(64, 65, 67, 32768); 
+
+            //(128,128,128)
+            cout << "-------------------------(128,128,128)---------------------" << endl;
+            cout << "-----------------------8192 part-----------------------" << endl;
+            run_strassen_block_jiang_mat_mul(2*64,2*64,2*64,8192);// 10.848159 s
+            run_strassen_block_coprime_mat_mul(4*32,4*35,4*33,32,35,33,8192);// 8.95519 s
+
+            cout << "-----------------------32768 part-----------------------" << endl;  
+            run_naive_block_jiang_mat_mul(128,128,128,32768);// 16.251344 s
+            run_strassen_block_coprime_mat_mul(2*64,2*67,2*65,64,67,65,32768);// 13.010182 s
+
+            //(256,256,256)
+            cout << "-------------------------(256,256,256)---------------------" << endl;
+            cout << "-----------------------8192 part-----------------------" << endl;
+            run_strassen_block_jiang_mat_mul(4*64,4*64,4*64,8192);// 71.54 s
+            run_strassen_block_coprime_mat_mul(8*32,8*35,8*33,32,35,33,8192);// 56.98 s
+            
+            cout << "-----------------------32768 part-----------------------" << endl;
+            run_strassen_block_jiang_mat_mul(2*128,2*128,2*128,32768);// 97.70 s
+            run_strassen_block_coprime_mat_mul(4*64,4*67,4*65,64,67,65,32768);// 80.99 s
+
+            // (512,512,512)
+            cout << "-------------------------(512,512,512)---------------------" << endl;
+            cout << "-----------------------8192 part-----------------------" << endl;
+            // 8192
+            run_strassen_block_jiang_mat_mul(8*64,8*64,8*64,8192);// 479.19 s
+            run_strassen_block_coprime_mat_mul(16*32,16*35,16*33,32,35,33,8192);// 390.26 s
+
+            // 32768
+            cout << "-----------------------32768 part-----------------------" << endl;
+            run_strassen_block_jiang_mat_mul(4*128,4*128,4*128,32768);
+            run_strassen_block_coprime_mat_mul(8*64,8*67,8*65,64,67,65,32768);
+
             break;
         //  case 17:
         //     // run_naive_block_coprime_mat_mul_imporve_log_I(98*21,8,90*23,21,8,23,8192);//95.4541 s
@@ -377,13 +491,37 @@ void run_coprime_mat_mul_I(size_t n, size_t m, size_t p, size_t poly_modulus_deg
     Decryptor decryptor(context, secret_key);
 
     CKKSEncoder encoder(context);
+    GaloisKeys gal_keys;
+
+    cout << "Please choose the method: 1 for our method, 2 for chen et al. method" << endl;
+    int method_choice;
+    cin >> method_choice;
+    if (method_choice == 1)
+    {
+        // xyy add: seg-hoisting
+        vector<int> step_s;
+        size_t size_m = (log2(poly_modulus_degree/2))/2 - 1;
+        // cout << "size_m = " << size_m << endl;
+        // for (size_t i = 1; i < size_t(sqrt(m)) + 1; i++) 
+        for (size_t i = 1; i < size_m + 1; i++)
+        {
+            step_s.push_back(mod(i * n, n*m));
+            step_s.push_back(mod(i * p, m*p));
+            // cout << mod(i * n, n*m) << ", ";
+            // cout << mod(i * p, m*p) << ", ";
+        }
+        cout << endl;
+        keygen.create_galois_keys(step_s, gal_keys);
+    }
     // size_t slot_count = encoder.slot_count();
     // cout << "Number of slots: " << slot_count << endl;
+    if (method_choice == 2)
+    {
+        // chen: native method
+        keygen.create_galois_keys(gal_keys);
+    }
 
-    GaloisKeys gal_keys;
-    keygen.create_galois_keys(gal_keys);
-
-    test_coprime_mat_mul(n, m, p, encoder, encryptor, scale, evaluator, relin_keys, gal_keys, decryptor);
+    test_coprime_mat_mul(n, m, p, encoder, encryptor, scale, evaluator, relin_keys, gal_keys, decryptor, method_choice);
 }
 
 void run_coprime_mat_mul_II(size_t n, size_t m, size_t p, size_t poly_modulus_degree)
@@ -416,10 +554,10 @@ void run_coprime_mat_mul_II(size_t n, size_t m, size_t p, size_t poly_modulus_de
     GaloisKeys gal_keys;
     keygen.create_galois_keys(gal_keys);
 
-    test_coprime_mat_mul(n, m, p, encoder, encryptor, scale, evaluator, relin_keys, gal_keys, decryptor);
+    test_coprime_mat_mul(n, m, p, encoder, encryptor, scale, evaluator, relin_keys, gal_keys, decryptor, 2);
 }
 
-void test_coprime_mat_mul(size_t n, size_t m, size_t p, CKKSEncoder &encoder, Encryptor &encryptor, double scale, Evaluator &evaluator, RelinKeys &relin_keys, GaloisKeys &gal_keys, Decryptor &decryptor)
+void test_coprime_mat_mul(size_t n, size_t m, size_t p, CKKSEncoder &encoder, Encryptor &encryptor, double scale, Evaluator &evaluator, RelinKeys &relin_keys, GaloisKeys &gal_keys, Decryptor &decryptor, int method_choice)
 {
     Matrix<double> A(n, m);
     Matrix<double> B(m, p);
@@ -436,38 +574,44 @@ void test_coprime_mat_mul(size_t n, size_t m, size_t p, CKKSEncoder &encoder, En
     // cout << "the resulting matrix C = A * B: " << endl;
     // C.print();
 
+    // double total_time_us = 0.0;
+    // int repeat = 1000;
+    // for (int i = 0; i < repeat; i++) {
     auto start_time = chrono::high_resolution_clock::now();
 
     cipher_matrix_coprime cipher_A(A,ceil(double(p)/m)+1,scale,encoder,encryptor);
     cipher_matrix_coprime cipher_B(B,ceil(double(n)/m)+1,scale,encoder,encryptor);
     cipher_matrix_coprime cipher_C;
 
-    encrypted_coprime_matrix_multiplication(encoder,scale,evaluator,relin_keys,gal_keys,cipher_A,cipher_B,cipher_C);
+    // auto end_time = chrono::high_resolution_clock::now();
+    // auto time_diff = chrono::duration_cast<chrono::microseconds>(end_time - start_time);
+    // cout << "The encode timing cost is: " << time_diff.count() / 1e6 << " s" << endl;
+
+    encrypted_coprime_matrix_multiplication(encoder,scale,evaluator,relin_keys,gal_keys,cipher_A,cipher_B,cipher_C,method_choice);
 
     auto end_time = chrono::high_resolution_clock::now();
     auto time_diff = chrono::duration_cast<chrono::microseconds>(end_time - start_time);
     cout << endl
-         << "----------------- Diag encode matrix multiplication --------------------" << endl;
+        << "----------------- Diag encode matrix multiplication --------------------" << endl;
     cout << endl
-         << "(n, m, p): (" << n << ", " << m << ", " << p << ")" << endl;
+        << "(n, m, p): (" << n << ", " << m << ", " << p << ")" << endl;
     cout << "The timing cost is: " << time_diff.count() / 1e6 << " s" << endl;
 
-    // decrypte result
+    // total_time_us += time_diff.count();
 
     Matrix<double> computed_C;
     cipher_C.dec_matrix_cipher(computed_C,encoder,decryptor);
-
-    // cout << "the computed C = A * B: " << endl;
-    // computed_C.print();
-
-    // cout << "the true C = A * B: " << endl;
-    // C.print();
 
     computed_C.scaling_inplace(-1.);
     computed_C = computed_C.add(C);
     computed_C.is_zero(-2);
     cout << "------------------------------------------------------------------------" << endl;
     cout << endl <<endl;
+    // }
+    // double avg_time_us = total_time_us / repeat;         // 平均微秒
+    // double avg_time_ms = avg_time_us / 1000.0;           // 平均毫秒
+    // cout << endl << "----------------- Diag encode matrix multiplication --------------------" << endl;
+    // cout << "Average time over " << repeat << " runs: " << avg_time_ms << " ms" << endl;
 }
 
 void run_long_mat_mul_I(size_t n, size_t m, size_t p,size_t poly_modulus_degree)
@@ -1039,7 +1183,7 @@ void test_strassen_block_jiang_mat_mul(size_t n, size_t m, size_t p, CKKSEncoder
     matrix_block encrypted_A(A,scale,encoder,encryptor);
     matrix_block encrypted_B(B,scale,encoder,encryptor);
     matrix_block encrypted_C;
-    encrypted_C=Strassen_block_jiang(encrypted_A,encrypted_B,scale,encoder,evaluator,gal_keys,relin_keys);
+    encrypted_C = Strassen_block_jiang(encrypted_A,encrypted_B,scale,encoder,evaluator,gal_keys,relin_keys);
     
    
     auto end_time = chrono::high_resolution_clock::now();
@@ -1091,13 +1235,39 @@ void run_strassen_block_coprime_mat_mul(size_t n, size_t m, size_t p,size_t s_n,
     Decryptor decryptor(context, secret_key);
 
     CKKSEncoder encoder(context);
+    GaloisKeys gal_keys;
     // size_t slot_count = encoder.slot_count();
     // cout << "Number of slots: " << slot_count << endl;
-    
-    GaloisKeys gal_keys;
-    keygen.create_galois_keys(gal_keys);
 
-    test_strassen_block_coprime_mat_mul(n,m,p,s_n,s_m,s_p,encoder,encryptor,scale,evaluator,relin_keys,gal_keys,decryptor);
+    cout << "Please choose the method: 1 for our method, 2 for chen et al. method" << endl;
+    int method_choice;
+    cin >> method_choice;
+    if (method_choice == 1)
+    {
+        // xyy add: seg-hoisting
+        vector<int> step_s;
+        size_t size_m = (log2(poly_modulus_degree/2))/2 - 1;
+        // cout << "size_m = " << size_m << endl;
+        // for (size_t i = 1; i < size_t(sqrt(m)) + 1; i++) 
+        for (size_t i = 1; i < size_m + 1; i++)
+        {
+            step_s.push_back(mod(i * s_n, s_n*s_m));
+            step_s.push_back(mod(i * s_p, s_m*s_p));
+            // cout << mod(i * n, n*m) << ", ";
+            // cout << mod(i * p, m*p) << ", ";
+        }
+        cout << endl;
+        keygen.create_galois_keys(step_s, gal_keys);
+    }
+    // size_t slot_count = encoder.slot_count();
+    // cout << "Number of slots: " << slot_count << endl;
+    if (method_choice == 2)
+    {
+        // chen: native method
+        keygen.create_galois_keys(gal_keys);
+    }
+
+    test_strassen_block_coprime_mat_mul(n,m,p,s_n,s_m,s_p,encoder,encryptor,scale,evaluator,relin_keys,gal_keys,decryptor, method_choice);
 }
 
 void run_strassen_block_coprime_mat_mul_I(size_t n, size_t m, size_t p,size_t s_n,size_t s_m,size_t s_p, size_t poly_modulus_degree)
@@ -1129,10 +1299,11 @@ void run_strassen_block_coprime_mat_mul_I(size_t n, size_t m, size_t p,size_t s_
     GaloisKeys gal_keys;
     keygen.create_galois_keys(gal_keys);
 
-    test_strassen_block_coprime_mat_mul(n,m,p,s_n,s_m,s_p,encoder,encryptor,scale,evaluator,relin_keys,gal_keys,decryptor);
+    test_strassen_block_coprime_mat_mul(n,m,p,s_n,s_m,s_p,encoder,encryptor,scale,evaluator,relin_keys,gal_keys,decryptor,2);
 }
 
-void test_strassen_block_coprime_mat_mul(size_t n, size_t m, size_t p, size_t s_n, size_t s_m, size_t s_p, CKKSEncoder &encoder, Encryptor &encryptor, double scale, Evaluator &evaluator, RelinKeys &relin_keys, GaloisKeys &gal_keys, Decryptor &decryptor)
+void test_strassen_block_coprime_mat_mul(size_t n, size_t m, size_t p, size_t s_n, size_t s_m, size_t s_p, CKKSEncoder &encoder, Encryptor &encryptor, double scale, Evaluator &evaluator, RelinKeys &relin_keys, GaloisKeys &gal_keys, Decryptor &decryptor, int method_choice)
+
 {
     Matrix<double> A(n, m);
     Matrix<double> B(m, p);
@@ -1154,7 +1325,7 @@ void test_strassen_block_coprime_mat_mul(size_t n, size_t m, size_t p, size_t s_
     matrix_block encrypted_A(A,s_n,s_m,ceil(double(s_p)/s_m)+1,scale,encoder,encryptor);
     matrix_block encrypted_B(B,s_m,s_p,ceil(double(s_n)/s_m)+1,scale,encoder,encryptor);
     matrix_block encrypted_C;
-    encrypted_C=Strassen_block_coprime(s_n,s_m,s_p,encrypted_A,encrypted_B,scale,encoder,evaluator,gal_keys,relin_keys);
+    encrypted_C = Strassen_block_coprime(s_n,s_m,s_p,encrypted_A,encrypted_B,scale,encoder,evaluator,gal_keys,relin_keys, method_choice);
     
    
     auto end_time = chrono::high_resolution_clock::now();
@@ -1237,7 +1408,7 @@ void test_naive_block_jiang_mat_mul(size_t n, size_t m, size_t p, CKKSEncoder &e
     matrix_block encrypted_A(A,scale,encoder,encryptor);
     matrix_block encrypted_B(B,scale,encoder,encryptor);
     matrix_block encrypted_C;
-    encrypted_C=Naive_block_jiang(encrypted_A,encrypted_B,scale,encoder,evaluator,gal_keys,relin_keys);
+    encrypted_C = Naive_block_jiang(encrypted_A,encrypted_B,scale,encoder,evaluator,gal_keys,relin_keys);
     
    
     auto end_time = chrono::high_resolution_clock::now();
@@ -1289,16 +1460,37 @@ void run_naive_block_coprime_mat_mul(size_t n, size_t m, size_t p,size_t s_n,siz
     Decryptor decryptor(context, secret_key);
 
     CKKSEncoder encoder(context);
+    GaloisKeys gal_keys;
+    cout << "Please choose the method: 1 for our method, 2 for chen et al. method" << endl;
+    int method_choice;
+    cin >> method_choice;
+    if (method_choice == 1)
+    {
+        // xyy add: seg-hoisting
+        vector<int> step_s;
+        size_t size_m = (log2(poly_modulus_degree/2))/2 - 1;
+        // cout << "size_m = " << size_m << endl;
+        // for (size_t i = 1; i < size_t(sqrt(m)) + 1; i++) 
+        for (size_t i = 1; i < size_m + 1; i++)
+        {
+            step_s.push_back(mod(i * s_n, s_n*s_m));
+            step_s.push_back(mod(i * s_p, s_m*s_p));
+        }
+        cout << endl;
+        keygen.create_galois_keys(step_s, gal_keys);
+    }
     // size_t slot_count = encoder.slot_count();
     // cout << "Number of slots: " << slot_count << endl;
-    
-    GaloisKeys gal_keys;
-    keygen.create_galois_keys(gal_keys);
+    if (method_choice == 2)
+    {
+        // chen: native method
+        keygen.create_galois_keys(gal_keys);
+    }
 
-    test_naive_block_coprime_mat_mul(n, m, p,s_n,s_m,s_p,encoder, encryptor, scale, evaluator, relin_keys, gal_keys, decryptor);
+    test_naive_block_coprime_mat_mul(n, m, p,s_n,s_m,s_p,encoder, encryptor, scale, evaluator, relin_keys, gal_keys, decryptor, method_choice);
 }
 
-void test_naive_block_coprime_mat_mul(size_t n, size_t m, size_t p,size_t s_n,size_t s_m,size_t s_p, CKKSEncoder &encoder, Encryptor &encryptor, double scale, Evaluator &evaluator, RelinKeys &relin_keys, GaloisKeys &gal_keys, Decryptor &decryptor)
+void test_naive_block_coprime_mat_mul(size_t n, size_t m, size_t p,size_t s_n,size_t s_m,size_t s_p, CKKSEncoder &encoder, Encryptor &encryptor, double scale, Evaluator &evaluator, RelinKeys &relin_keys, GaloisKeys &gal_keys, Decryptor &decryptor, int method_choice)
 {
     Matrix<double> A(n, m);
     Matrix<double> B(m, p);
@@ -1320,7 +1512,7 @@ void test_naive_block_coprime_mat_mul(size_t n, size_t m, size_t p,size_t s_n,si
     matrix_block encrypted_A(A,s_n,s_m,ceil(double(s_p)/s_m)+1,scale,encoder,encryptor);
     matrix_block encrypted_B(B,s_m,s_p,ceil(double(s_n)/s_m)+1,scale,encoder,encryptor);
     matrix_block encrypted_C;
-    encrypted_C=Naive_block_coprime(s_n,s_m,s_p ,encrypted_A,encrypted_B,scale,encoder,evaluator,gal_keys,relin_keys);
+    encrypted_C = Naive_block_coprime(s_n,s_m,s_p ,encrypted_A,encrypted_B,scale,encoder,evaluator,gal_keys,relin_keys,method_choice);
     
    
     auto end_time = chrono::high_resolution_clock::now();
@@ -1555,7 +1747,7 @@ void test_naive_block_coprime_mat_mul_imporve_log(size_t n, size_t m, size_t p,s
     matrix_block encrypted_A(A,s_n,s_m,s_p,scale,encoder,encryptor);
     matrix_block encrypted_B(B,s_m,s_p,s_n,scale,encoder,encryptor);
     matrix_block encrypted_C;
-    encrypted_C=Naive_block_coprime_imporve_log(s_n,s_m,s_p ,encrypted_A,encrypted_B,scale,encoder,evaluator,gal_keys,relin_keys);
+    encrypted_C = Naive_block_coprime_imporve_log(s_n,s_m,s_p ,encrypted_A,encrypted_B,scale,encoder,evaluator,gal_keys,relin_keys);
     
    
     auto end_time = chrono::high_resolution_clock::now();
@@ -1671,7 +1863,7 @@ void test_strassen_block_coprime_mat_mul_imporve_log(size_t n, size_t m, size_t 
     matrix_block encrypted_A(A,s_n,s_m,s_p,scale,encoder,encryptor);
     matrix_block encrypted_B(B,s_m,s_p,s_n,scale,encoder,encryptor);
     matrix_block encrypted_C;
-    encrypted_C=Strassen_block_coprime_imporve_log(s_n,s_m,s_p,encrypted_A,encrypted_B,scale,encoder,evaluator,gal_keys,relin_keys);
+    encrypted_C = Strassen_block_coprime_imporve_log(s_n,s_m,s_p,encrypted_A,encrypted_B,scale,encoder,evaluator,gal_keys,relin_keys);
     
    
     auto end_time = chrono::high_resolution_clock::now();
