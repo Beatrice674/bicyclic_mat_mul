@@ -69,9 +69,7 @@ In this case, `case 1`  refer to matrix multiplication for small dimensions, `ca
    💡 $N$ = 32768
 
    - `Improved bicyclic encode matrix multiplication`: $(128, 63, 61)$
-
    - `Improved bicyclic encode matrix multiplication`: $(89, 91, 90)$
-
    - `Improved bicyclic encode matrix multiplication`: $(63, 128, 61)$
 
      
