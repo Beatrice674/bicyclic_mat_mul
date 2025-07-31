@@ -1,3 +1,0 @@
-/home/delld/xyy/seall/native/examples/build/CMakeFiles/sealexamples.dir
-/home/delld/xyy/seall/native/examples/build/CMakeFiles/edit_cache.dir
-/home/delld/xyy/seall/native/examples/build/CMakeFiles/rebuild_cache.dir

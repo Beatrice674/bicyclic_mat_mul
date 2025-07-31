@@ -1,6 +1,4 @@
-# Homomorphic Matrix Operations under Bicyclic Encoding
-
-## Compile and Run (Ubuntu 22.04.2 LTS)
+# Improved Homomorphic Matrix Operations under Bicyclic Encoding
 
 ### Dependencies
 
@@ -8,21 +6,35 @@
 - clang
 - [Microsoft SEAL](https://github.com/microsoft/seal)
 
-### Compile
+### Compile the code
 
 Download the source code from GitHub, unzip and enter the repository root directory, and then run the following:
 
-    cd bicyclic_mat_mul
-    mkdir build
-    cd build
-    cmake ../test/
-    make
+```
+cd bicyclic_mat_mul
+```
 
-### How to use 
+- Install the SEAL library
 
-- Open a terminal, enter the `build` directory and run 
+```
+cd seal_install
+cmake -S . -B build 
+cmake --build build
+sudo cmake --install build
+cd native/examples
+cmake -S . -B build
+cmake --build build
+```
 
-      ./test_enc_mat_mul
+- Execute the experimental code
+
+```
+mkdir build
+cd build
+cmake ../test/
+make
+./test_enc_mat_mul
+```
 
 
 ### Test Instructions
@@ -32,244 +44,142 @@ Once the file is executed, it will output the following information:
 ```bash
 Examples:
 
-  1.  Bicyclic matrix multiplication base
-  2.  Faster Bicyclic matrix multiplication base
-  3.  Jiang matrix multiplication base
-  4.  Lu matrix multiplication base
-  5.  R-T matrix multiplication base
-  6.  Block matrix multiplication by LongRot action
-  7.  Block matrix multiplication strassen and naive(jiang)
-  8.  Block matrix multiplication strassen and naive(Bicyclic)
-  9.  Base matrix multiplication in Table 9
- 10.  Base matrix multiplication in Table 10
- 11.  Block matrix multiplication in Table 11(128,128,128)
- 12.  Block matrix multiplication in Table 12(256,256,256)
- 13.  Block matrix multiplication in Table 13(512,512,512)
- 14.  Block matrix multiplication in Table 14
- 15.  Block matrix multiplication in Table 15
- 16.  Block matrix multiplication in Table 16
- 0. Exit
+  1.  Bicyclic matrix multiplication for small dimensions
+  2.  Bicyclic matrix multiplication for large dimensions
+  3.  OpenMP optimization
+ 	0. Exit
 ```
 
-In this case, `case 1-7` refer to the basic test cases, while `case 8-14` include all the scenarios from Table 8 to Table 14. Here, $(n,m,p)$ represents matrices $A\in \mathcal{R}^{n \times m}$ and $B\in \mathcal{R}^{m \times p}$. The specific test scenarios are as follows:
+In this case, `case 1`  refer to matrix multiplication for small dimensions, `case 2`  refer to matrix multiplication for large dimensions, `case 3`  refer to OpenMP optimization for Strassen algorithm, respectively.Here $N$ is the polynomial degree and $(n,m,p)$ represents matrices $A\in \mathbb{R}^{n \times m}$ and $B\in \mathbb{R}^{m \times p}$. The specific test scenarios are as follows:
 
 1. `case 1`:
 
-   - `Bicyclic encode matrix multiplication`: $(44, 45, 43)$
-   - `Bicyclic encode matrix multiplication`: $(61, 64, 63)$
-   - `Bicyclic encode matrix multiplication`: $(29, 128, 31)$
-   - `Bicyclic encode matrix multiplication`: $(89, 91, 90)$
+   💡 $N$ = 8192
+
+   - `Improved bicyclic encode matrix multiplication`: $(64, 31, 29)$
+   - `Improved bicyclic encode matrix multiplication`: $(44, 45, 43)$
+   - `Improved bicyclic encode matrix multiplication`: $(31, 64, 29)$
+
+   💡 $N$ = 16384
+
+   - `Improved bicyclic encode matrix multiplication`: $(128, 31, 29)$
+   - `Improved bicyclic encode matrix multiplication`: $(61, 64, 63)$
+   - `Improved bicyclic encode matrix multiplication`: $(29, 128, 31)$
+
+   💡 $N$ = 32768
+
+   - `Improved bicyclic encode matrix multiplication`: $(128, 63, 61)$
+
+   - `Improved bicyclic encode matrix multiplication`: $(89, 91, 90)$
+
+   - `Improved bicyclic encode matrix multiplication`: $(63, 128, 61)$
+
+     
 
 2. `case 2`:
-   * `Faster Bicyclic encode matrix multiplication`: $(15, 16, 17)$
-   * `Faster Bicyclic encode matrix multiplication`: $(21, 16, 23)$
-   * `Faster Bicyclic encode matrix multiplication`: $(31, 16, 33)$
+
+   ▪️Matrix dimensions $(64, 64, 64)$
+
+   💡 $N$ = 8192
+
+   * `Jiang matrix multiplication`: $(64,64,64)$
+   * `Bicyclic encode naive block matrix multiplication`: $(32, 35, 33) \times 2$ 
+   * `Bicyclic encode strassen block matrix multiplication`: $(32, 35, 33) \times 2$ 
+
+   💡 $N$ = 32768
+
+   * `Improved bicyclic encode matrix multiplication`: $(64,67,65)$
+
+   ▪️Matrix dimensions $(128, 128, 128)$
+
+   💡 $N$ = 8192
+
+   * `Jiang naive block matrix multiplication`: $(64,64,64) \times 2$
+   * `Jiang strassen block matrix multiplication`: $(64,64,64) \times 2$
+   * `Bicyclic encode naive block matrix multiplication`: $(43, 45, 44) \times 3$ 
+   * `Bicyclic encode strassen block matrix multiplication`: $(32, 35, 33) \times 4$ 
+
+   💡 $N$ = 32768
+
+   * `Jiang matrix multiplication`: $(128,128,128)$ 
+   * `Bicyclic encode naive block matrix multiplication`: $(64, 67, 65) \times 2 $
+   * `Bicyclic encode strassen block matrix multiplication`: $(64, 67, 65) \times 2 $
+
+   ▪️Matrix dimensions $(256, 256, 256)$
+
+   💡 $N$ = 8192
+
+   * `Jiang naive block matrix multiplication`: $(64,64,64) \times 4$
+   * `Jiang strassen block matrix multiplication`: $(64,64,64) \times 4$
+   * `Bicyclic encode naive block matrix multiplication`: $(43, 45, 44) \times 6$ 
+   * `Bicyclic encode strassen block matrix multiplication`: $(32, 35, 33) \times 8$ 
+
+   💡 $N$ = 32768
+
+   * `Jiang naive block matrix multiplication`: $(128,128,128) \times 2$
+   * `Jiang strassen block matrix multiplication`:  $(128,128,128) \times 2$
+   * `Bicyclic encode naive block matrix multiplication`: $(88, 89, 87) \times 3 $
+   * `Bicyclic encode strassen block matrix multiplication`: $(64, 67, 65) \times 4 $
+
+   ▪️Matrix dimensions $(512, 512, 512)$
+
+   💡 $N$ = 8192
+
+   * `Jiang naive block matrix multiplication`: $(64,64,64) \times 8$
+   * `Jiang strassen block matrix multiplication`: $(64,64,64) \times 8$
+   * `Bicyclic encode naive block matrix multiplication`: $(43, 45, 44) \times 12$ 
+   * `Bicyclic encode strassen block matrix multiplication`: $(32, 35, 33) \times 16$ 
+
+   💡 $N$ = 32768
+
+   * `Jiang naive block matrix multiplication`: $(128,128,128) \times 4$
+   * `Jiang strassen block matrix multiplication`:  $(128,128,128) \times 4$
+   * `Bicyclic encode naive block matrix multiplication`: $(88, 89, 87) \times 6 $
+   * `Bicyclic encode strassen block matrix multiplication`: $(64, 67, 65) \times 8 $
+
    
+
 3. `case 3`:
 
-   - `Jiang matrix multiplication`: $(64,64,64)$
-   - `Jiang matrix multiplication`: $(128,128,128)$ | N=32768
+   ▪️Matrix dimensions $(64, 64, 64)$
 
-4. `case 4`:
+   💡 $N$ = 8192
 
-   - `Lu matrix multiplication segment 8`: $(16,16,5 \times 4096)$
-   - `Lu matrix multiplication not segment`: $(16,16,5 \times 4096)$
-   - `Lu matrix multiplication segment 8`: $(64,64,5 \times 4096)$
-   - `Lu matrix multiplication not segment`: $(64,64,5 \times 4096)$
+   * `Bicyclic encode strassen block matrix multiplication with OpenMP`: $(32, 35, 33) \times 2$ 
 
-5. `case 5`:
+   ▪️Matrix dimensions $(128, 128, 128)$
 
-   - `R-T matrix multiplication`: $(16,16,16)$
+   💡 $N$ = 8192
 
-6. `case 6`:
+   * `Jiang strassen block matrix multiplication with OpenMP`: $(64,64,64) \times 2$
+   * `Bicyclic encode strassen block matrix multiplication with OpenMP`: $(32, 35, 33) \times 4$ 
 
-   - `Bicyclic LongRot matrix multiplication with pre-generate`: $(256, 257, 17)$
-   - `Bicyclic LongRot matrix multiplication with pre-generate`: $(256, 17, 257)$
-   - `Bicyclic LongRot matrix multiplication`: $(256, 257, 17)$
-   - `Bicyclic LongRot matrix multiplication`: $(256, 17, 257)$
+   💡 $N$ = 32768
 
-7. `case 7`:
+   * `Bicyclic encode strassen block matrix multiplication with OpenMP`: $(64, 67, 65) \times 2 $
 
-   - `Jiang naive block matrix multiplication`: $(64,64,64) \times 4$
-   - `Jiang strassen block matrix multiplication`: $(64,64,64) \times 4$
-   - `Jiang naive block matrix multiplication`: $(64,64,64) \times 8$
-   - `Jiang strassen block matrix multiplication`: $(64,64,64) \times 8$
+   ▪️Matrix dimensions $(256, 256, 256)$
 
-8. `case 7`:
+   💡 $N$ = 8192
 
-   - `Bicyclic encode naive block matrix multiplication`: $(44, 45, 43) \times 4$
-   - `Bicyclic encode strassen block matrix multiplication`: $(44, 45, 43) \times 4$
-   - `Bicyclic encode naive block matrix multiplication`: $(44, 45, 43) \times 8$
-   - `Bicyclic encode strassen block matrix multiplication`: $(44, 45, 43) \times 8$
+   * `Jiang strassen block matrix multiplication with OpenMP`: $(64,64,64) \times 4$
+   * `Bicyclic encode strassen block matrix multiplication with OpenMP`: $(32, 35, 33) \times 8$ 
 
-9. `case 9`:
-   - `R-T matrix multiplication`: $(16,16,16)$
-   - `Bicyclic encode matrix multiplication`: $(16, 19, 17)  | \log q=170$
-   - `Bicyclic encode matrix multiplication`: $(16, 19, 17)  | \log q=140$
-   - `Faster Bicyclic encode matrix multiplication`: $(15, 16, 17)$
+   💡 $N$ = 32768
+
+   * `Jiang strassen block matrix multiplication with OpenMP`:  $(128,128,128) \times 2$
+   * `Bicyclic encode strassen block matrix multiplication with OpenMP`: $(64, 67, 65) \times 4 $
+
+   ▪️Matrix dimensions $(512, 512, 512)$
+
+   💡 $N$ = 8192
+
+   * `Jiang strassen block matrix multiplication with OpenMP`: $(64,64,64) \times 8$
+   * `Bicyclic encode strassen block matrix multiplication with OpenMP`: $(32, 35, 33) \times 16$ 
+
+   💡 $N$ = 32768
+
+   * `Jiang strassen block matrix multiplication with OpenMP`:  $(128,128,128) \times 4$
+   * `Bicyclic encode strassen block matrix multiplication with OpenMP`: $(64, 67, 65) \times 8 $
+
    
-10. `case 10`:
-
-       - `Jiang matrix multiplication`: $(64,64,64)$
-
-       - `Jiang matrix multiplication`: $(128,128,128) | N=32768$
-
-       - `Bicyclic encode matrix multiplication`: $(44, 45, 43)$
-
-       - `Bicyclic encode matrix multiplication`: $(61, 64, 63) | N=16384$
-
-       - `Bicyclic encode matrix multiplication`: $(89, 91, 90) | N=32768$
-
-       - `Faster Bicyclic encode matrix multiplication`: $(15, 16, 17)$
-
-       - `Faster Bicyclic encode matrix multiplication`: $(21, 16, 23)$
-
-       - `Faster Bicyclic encode matrix multiplication`: $(31, 16, 33)$
-
-11. `case 11`:
-    * `Jiang naive block matrix multiplication`: $(64,64,64) \times 2$
-
-    * `Jiang naive block matrix multiplication`: $(128,128,128) \times 1 |N=32768$
-
-    * `Jiang strassen block matrix multiplication`: $(64,64,64) \times 2$
-
-      
-
-    * `Bicyclic encode naive block matrix multiplication`: $(43, 45, 44) \times 3$
-
-    * `Bicyclic encode naive block matrix multiplication`: $(64, 67, 65) \times 2 | N=32768$
-
-    * `Bicyclic encode strassen block matrix multiplication`: $(32, 35, 33) \times 4$
-
-    * `Bicyclic encode strassen block matrix multiplication`: $(64, 67, 65) \times 2 | N=32768$
-
-      
-
-    * `Faster Bicyclic encode naive block matrix multiplication`: $(9\times 15, 8\times 16, 8\times 17)$ 
-
-    * `Faster Bicyclic encode naive block matrix multiplication`: $(7\times 21, 4\times 32, 6\times 23 ) | N=32768$
-
-    * `Faster Bicyclic encode strassen block matrix multiplication`: $(11, 8, 9) \times 16$
-
-    * `Faster Bicyclic encode strassen block matrix multiplication`: $(19, 16, 17) \times 8 | N=32768$
-
-      
-
-    * `Bicyclic LongRot matrix multiplication `: $(128, 131, 129)$
-
-    * `Bicyclic LongRot matrix multiplication`: $(128, 131, 129) | N=32768$
-
-12. `case 12`:
-
-    - `Jiang naive block matrix multiplication`: $(64,64,64) \times 4$
-
-    - `Jiang naive block matrix multiplication`: $(128,128,128) \times 2 | N=32768$
-
-    - `Jiang strassen block matrix multiplication`: $(64,64,64) \times 4$
-
-    - `Jiang strassen block matrix multiplication`:  $(128,128,128) \times 2 | N=32768$
-
-      
-
-    - `Bicyclic encode naive block matrix multiplication`: $(44, 45, 43)\times 6$
-
-    - `Bicyclic encode naive block matrix multiplication`: $(88, 89, 87) \times 3 | N=32768$
-
-    - `Bicyclic encode strassen block matrix multiplication`: $(44, 45, 43) \times 8$
-
-    - `Bicyclic encode strassen block matrix multiplication`: $(64, 65, 67) \times 4 | N=32768$
-
-      
-
-    - `Faster Bicyclic encode naive block matrix multiplication`: $(18\times 15, 16\times 16, 16\times 17)$ 
-
-    - `Faster Bicyclic encode naive block matrix multiplication`: $(13\times 21, 8\times 32, 12\times 23 ) | N=32768$
-
-      
-
-    - `Bicyclic LongRot matrix multiplication with pre-generate`: $(256, 259, 257)$
-
-    - `Bicyclic LongRot matrix multiplication`: $(256, 259, 257)| N=32768$
-
-13. `case 13`:
-
-    - `Jiang naive block matrix multiplication`: $(64,64,64) \times 8$
-
-    - `Bicyclic encode naive block matrix multiplication`: $(44, 45, 43) \times 12$
-
-    - `Jiang strassen block matrix multiplication`: $(64,64,64) \times 8$
-
-    - `Bicyclic encode strassen block matrix multiplication`: $(44, 45, 43) \times 16$
-
-    - `Bicyclic LongRot matrix multiplication with pre-generate`: $(512, 515, 513)$
-
-      
-
-    - `Jiang naive block matrix multiplication`: $(64,64,64) \times 16$
-
-    - `Bicyclic encode naive block matrix multiplication`: $(44, 45, 43) \times 24$
-
-    - `Jiang strassen block matrix multiplication`: $(64,64,64) \times 16$
-
-    - `Bicyclic encode strassen block matrix multiplication`: $(32, 35, 33) \times 32 | \log q=150$
-
-    - `Bicyclic LongRot matrix multiplication with pre-generate`: $(1024, 1027, 1025)$
-
-14. `case 14`:
-
-    - `Bicyclic LongRot matrix multiplication with pre-generate`: $(256, 257, 17)$
-    - `Bicyclic LongRot matrix multiplication with pre-generate`: $(256, 17, 257)$
-    - `Bicyclic LongRot matrix multiplication with pre-generate`: $(1024, 1025, 17)$
-    - `Bicyclic LongRot matrix multiplication with pre-generate`: $(1024, 17, 1025)$
-    - `Bicyclic LongRot matrix multiplication with pre-generate`: $(2048, 2049, 11)$
-    - `Bicyclic LongRot matrix multiplication with pre-generate`: $(2049, 8, 2051)$
-
-15. `case 15`:
-
-    - `Jiang naive block matrix multiplication`: $(4,1636,5)$
-
-    - `Jiang naive block matrix multiplication`: $(8,3045,9)$
-
-    - `Jiang naive block matrix multiplication`: $(16,6093,17)$
-
-    - `Jiang naive block matrix multiplication`: $(32,13847,33)$
-
-      
-
-    - `Bicyclic encode naive block matrix multiplication`: $(4,1636,5)$
-
-    - `Bicyclic encode naive block matrix multiplication`: $(8,3045,9)$
-
-    - `Bicyclic encode naivee block matrix multiplication`: $(16,6093,17)$
-
-    - `Bicyclic encode naive block matrix multiplication`: $(32,13847,33)$
-
-16. `case 16`:
-
-    - `Jiang naive block matrix multiplication`: $(4,5,1636)$
-
-    - `Jiang naive block matrix multiplication`: $(8,9,3405)$
-
-    - `Jiang naive block matrix multiplication`: $(16,17,6093)$
-
-    - `Jiang naive block matrix multiplication`: $(32,33,13847)$
-
-      
-
-    - `Bicyclic encode naive block matrix multiplication`: $(4,5,1636)$
-
-    - `Bicyclic encode naive block matrix multiplication`: $(8,9,3405)$
-
-    - `Bicyclic encode naivee block matrix multiplication`: $(16,17,6093)$
-
-    - `Bicyclic encode naive block matrix multiplication`: $(32,33,13847)$
-
-      
-
-    - `Lu matrix multiplication segment 8`:  $(4,5,1636)$
-
-    - `Lu matrix multiplication segment 8`:  $(8,9,3405)$
-
-    - `Lu matrix multiplication segment 8`:  $(16,17,6093)$
-
-    - `Lu matrix multiplication segment 8`:  $(32,33,13847)$
